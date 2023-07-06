@@ -1,0 +1,415 @@
+@font-face {
+    font-family:roboto ;
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family:cursive;
+    src: url("../fonts/CedarvilleCursive-Regular.ttf")
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap'); 
+
+body {
+    overflow-x: hidden; 
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color:rgba(248, 247, 244, 0.967);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 5%;
+}
+
+#logo{
+    cursor: pointer;
+    position: relative;
+    top: 30px   
+}
+
+/*menu de navegacion*/
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul li a{
+    font-size: 25px;
+    color: black;
+    padding:20px;
+    margin: 40px;
+    position: relative;
+    top: 10px; 
+    right: 30px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+nav li a:hover{
+    color: rgb(166, 138, 47);
+}
+
+#icono-email{
+    cursor: pointer;
+    position:relative;
+    top: 5px;
+    right: 20px;
+}
+
+#icono-whatsapp{
+    cursor: pointer;
+    position:relative;
+    top: 5px;
+}
+/* MAIN */
+.fotoPrincipal{
+    position: relative;
+    top: 20px;
+
+}
+
+.fotoPrincipal img{
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow:0 0 10px rgb(154, 154, 154);
+}
+
+.titulo{
+    font-family:cursive;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+
+.parrafo1{
+    text-align: center;
+    width: 800px;
+    position: relative;
+    top: 100px;
+    left: 250px;
+}
+
+.parrafo1 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.parrafo2{
+    text-align: center;
+    width: 1300px;
+    position: relative;
+    top: 60px;
+    left: 250px;
+}
+
+.parrafo2 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.parrafo3{
+    text-align: center;
+    width: 1300px;
+    position: relative;
+    top: 30px;
+    left: 250px;
+}
+
+.parrafo3 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.grid-container{
+    max-width: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 700px 250px 500px 300px 900px;
+    grid-template-areas:
+    "texto1 texto1 foto"
+    "texto2 texto2 texto2"
+    "imagenes imagenes imagenes"
+    "texto3 texto3 texto3"
+    "redes redes redes"
+}
+
+.nested-grid{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.nested-grid img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imagenPrincipal{
+    grid-area: foto;
+}
+
+.presentacion1{
+    grid-area: texto1;
+}
+
+.presentacion2{
+    grid-area: texto2;
+}
+
+.presentacionImagenes{
+    grid-area: imagenes;
+}
+
+.presentacionImagenes img{
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.presentacion3{
+    grid-area: texto3;
+}
+
+.container .visorInstagram{
+    grid-area: redes;
+    display: grid;
+    place-items: center;
+    height: 101vh;
+}
+
+.nested-grid-2 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*FOOTER*/
+footer{
+    background-color:rgba(248, 247, 244, 0.967);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    padding: 10px 5%;
+}
+
+.footer{
+    height: 600px;
+}
+
+footer{
+    background-color: rgba(234, 232, 225, 0.967);
+}
+
+
+/*titulo del footer*/
+#tituloContacto{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(166, 138, 47) ;
+    font-size: 40px;
+    text-align: center;
+
+
+}
+
+/*informacion de contacto*/
+#whatsapp{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    margin-left: 10px;
+    position:relative;
+    top: 10px;
+}
+
+#email{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    margin-left: 10px;
+    position:relative;
+    top: 5px;
+}
+
+.fila{
+    display: flex;
+    align-items: center;
+}
+
+/*formulario*/
+form {
+    font-size: 20px;
+}*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contacto {
+    text-align: center;
+    
+}
+
+.fila{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.fila img {
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+form{ 
+    position: relative;
+    left: 310px;
+}
+
+.btn-primary{ /*boton enviar*/
+    position: relative;
+    left: 1000px;
+    background-color: rgb(166, 138, 47);
+}
+
+/*PÁGINAS*/
+/*pagina: postales de Buenos Aires*/
+#postales{ /*titulo*/
+    font-family:"roboto";
+    color: rgb(166, 138, 47) ;
+    text-align: center;
+    font-size: 40px;
+}
+
+.imagenesDePostales{
+    display: grid;
+    grid-template-columns: 600px 600px 600px;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px 500px 500px 500px
+
+}
+
+.imagenesDePostales img:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow:0 0 10px rgb(154, 154, 154);
+}
+
+/*pagina: naturaleza y animales*/
+#naturalezaAnimales{ /*titulo*/
+    font-family:"roboto";
+    color: rgb(166, 138, 47);
+    text-align: center;
+    font-size: 40px;
+}
+
+#naturaleza img:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow:0 0 10px rgb(154, 154, 154);
+}
+
+#animales img:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow:0 0 10px rgb(154, 154, 154);
+}
+
+/*pagina: retrato*/
+#retrato{ /*titulo*/
+    font-family:"roboto";
+    color: rgb(166, 138, 47);
+    text-align: center;
+    font-size: 40px;
+}
+
+#dama{
+    padding-right: 25px
+}
+
+#chaplin{
+    padding-right: 25px
+}
+
+#campesino{
+    padding-right: 25px
+}
+
+.imagenesDeRetrato img:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow:0 0 10px rgb(154, 154, 154);
+}
+
+/*pagina: lugares para visitar*/
+#lugares{ /*titulo*/
+    font-family:"roboto";
+    color: rgb(166, 138, 47) ;
+    text-align: center;
+    font-size: 40px;
+}
+
+.imagenesLugaresParaVisitar img:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow:0 0 10px rgb(154, 154, 154);
+}
+
+/*MOVIL*/
+@media (max-width: 576px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "texto1"
+        "foto"
+        "texto2"
+        "imagenes"
+        "texto3"
+        "redes"
+    }
+
+    .grid-container section{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        justify-items: center;
+    }
+}
