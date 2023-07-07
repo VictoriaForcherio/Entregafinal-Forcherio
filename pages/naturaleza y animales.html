@@ -78,39 +78,47 @@
     </main>
 
     <footer>
-        <div>
-            <h2 id="contacto">Contacto</h2>
+        <div class="footer">
+    
+            <div>
+                <h2 id="tituloContacto">Contacto</h2>
+            </div>
+    
+    <!-- iconos e informacion de contacto-->  
+        <div class="contacto">
+            <div class="fila">
+                <img id="iconoWhatsapp" src="../img/whatsapp.png" alt="icono de whatsapp" width="35" height="35">
+                <p id="whatsapp">+54 9 11 6374-2404</p>
+            </div>
+    
+            <div class="fila">
+                <img id="iconoCorreo2" src="../img/email.png" alt="icono de correo electronico" width="35" height="35">
+                <p id="email">cuandoenfoco@gmail.com</p>
+            </div>
         </div>
-
-<!-- iconos de contacto -->
-        <img id="iconoWhatsapp" src="../img/whatsapp.png" alt="icono de whatsapp">
-        <img id="iconoCorreo2" src="../img/email.png" alt="icono de correo electronico">
-
-<!--informacion de contacto -->
-    <div class="caja3"> 
-            <p id="whatsapp">+54 9 11 2345-2345</p>
-            <br>
-            <p id="email">cuandoenfoco@gmail.com</p>
-    </div>
-
-<!--formulario -->
-    <div class="caja4">
-        <form action="">    
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="Nombre">
-            </div>
-            <div>
-                <label for="correo">correo</label>
-                <input type="email" name="Correo">
-            </div>
-            <div>
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-            </div> 
-            <button class="boton" type="submit">Enviar</button>            
-        </form>
-    </div>
-    </footer>
+    
+    
+        <!-- formulario -->
+        <div class="container">
+            <form class="row g-3">
+                <div class="col-6">
+                    <label for="nombre"></label>
+                    <input type="text" name="Nombre" placeholder="Nombre">
+                </div>
+                <div class="col-6">
+                    <label for="correo"></label>
+                    <input type="email" name="Correo" placeholder="e-mail">
+                </div>
+                <div class="col-12">
+                    <label for="mensaje"></label>
+                    <textarea name="mensaje" id="" cols="114" rows="8" placeholder="Escribe tu mensaje"></textarea>
+                </div> 
+                <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>  
+                </div>
+            </form>
+        </div>
+        </div>
+        </footer>
 </body>
 </html>
