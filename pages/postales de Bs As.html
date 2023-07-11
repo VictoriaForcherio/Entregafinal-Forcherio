@@ -39,21 +39,22 @@
     </header>
 
     <main>
-        <h1 id="postales">Postales de Buenos Aires</h1>
-
-        <section class="imagenesDePostales">
-            <div class="container">
+        <div class="main">
+            <section class="container">
                 <div class="row">
-                    <div class="img1 col-12 col-lg-4"><img src="../img/postal 1.jpg" alt="cabildo" width="400px" height="500px"></div>
-                    <div class="img2 col-12 col-lg-4"><img src="../img/postal 2.jpg" alt="Av. 9 de julio" width="400px" height="500px"></div>
-                    <div class="img3 col-12 col-lg-4"><img src="../img/postal 3.jpg" alt="obelisco" width="400px" height="500px"></div>
-                    <div class="img4 col-12 col-lg-4"><img src="../img/postal 4.jpg" alt="palacio de la legislatura" width="400px" height="500px"></div>
-                    <div class="img5 col-12 col-lg-4"><img src="../img/postal 5.jpg" alt="torres de puerto madero" width="400px" height="500px"></div>
-                    <div class="img6 col-12 col-lg-4"><img src="../img/postal 6.jpg" alt="congreso" width="400px" height="500px"></div>
-                </div>
-            </div>
-        </section>
+                    <div class col-12 col-lg-12>
+                        <h1 id="postales">Postales de Buenos Aires</h1>
+                    </div>
 
+                    <div class="img1 col-12 col-lg-4"><img id="cabildo" src="../img/postal 1.jpg" alt="cabildo" width="550px" height="650px"></div>
+                    <div class="img2 col-12 col-lg-4"><img id="av-9-de-julio" src="../img/postal 2.jpg" alt="Av. 9 de julio" width="550px" height="650px"></div>
+                    <div class="img3 col-12 col-lg-4"><img id="obelisco" src="../img/postal 3.jpg" alt="obelisco" width="550px" height="650px"></div>
+                    <div class="img4 col-12 col-lg-4"><img id="palacio-de-la-legislatura" src="../img/postal 4.jpg" alt="palacio de la legislatura" width="550px" height="650px"></div>
+                    <div class="img5 col-12 col-lg-4"><img id="puerto-madero" src="../img/postal 5.jpg" alt="torres de puerto madero" width="550px" height="650px"></div>
+                    <div class="img6 col-12 col-lg-4"><img id="congreso" src="../img/postal 6.jpg" alt="congreso" width="550px" height="650px"></div>
+                </div>
+            </section>s
+        </div>
     </main>
 
     <footer>
@@ -77,27 +78,26 @@
     
     
         <!-- formulario -->
-        <div class="container">
-            <form class="row g-3">
-                <div class="col-6">
-                    <label for="nombre"></label>
-                    <input type="text" name="Nombre" placeholder="Nombre">
-                </div>
-                <div class="col-6">
-                    <label for="correo"></label>
-                    <input type="email" name="Correo" placeholder="e-mail">
-                </div>
-                <div class="col-12">
-                    <label for="mensaje"></label>
-                    <textarea name="mensaje" id="" cols="114" rows="8" placeholder="Escribe tu mensaje"></textarea>
-                </div> 
-                <div class="col-12">
-                <button class="btn btn-primary" type="submit">Enviar</button>  
-                </div>
-            </form>
+            <div class="container">
+                <form class="row g-3">
+                    <div class="col-6">
+                        <label for="nombre"></label>
+                        <input type="text" name="Nombre" placeholder="Nombre">
+                    </div>
+                    <div class="col-6">
+                        <label for="correo"></label>
+                        <input type="email" name="Correo" placeholder="e-mail">
+                    </div>
+                    <div class="col-12">
+                        <label for="mensaje"></label>
+                        <textarea name="mensaje" id="" cols="114" rows="8" placeholder="Escribe tu mensaje"></textarea>
+                    </div> 
+                    <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>  
+                    </div>
+                </form>
+            </div>
         </div>
-        </div>
-        </footer>
-    
+    </footer>
 </body>
 </html>

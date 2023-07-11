@@ -40,41 +40,32 @@
     </header>
 
     <main>
-        <h1 id="naturalezaAnimales">Naturaleza y animales</h1>
-        
-        <section id="naturaleza">
-            <div class="container">
+        <div class="main-nat-anim">
+            <section class="container">
                 <div class="row">
-                    <h2 class="col-12">Naturaleza</h2>    
-                </div>
-            </div>    
-            
-            <div class="container">
-                <div class="row">                     
-                    <div class="img1 col-12 col-lg-4"><img src="../img/lago.jpg" alt="lago" width="500px" height="600px"></div>
-                    <div class="img1 col-12 col-lg-4"><img src="../img/parque.jpg" alt="parque" width="500px" height="600px"></div>
-                    <div class="img1 col-12 col-lg-4"><img src="../img/amanecer1.jpg" alt="amanecer en el muelle de La Lucila del Mar" width="500px" height="600px"></div>
-                </div>
-            </div>
-        </section>
+                    <div class col-12 col-lg-12>
+                        <h1 id="naturalezaAnimales">Naturaleza y animales</h1>
+                        <h2 id="naturaleza" >Naturaleza</h2>  
+                    </div>  
 
-            
-        <section id="animales">
-            <div class="container">
-                <div class="row">
-                    <h2>Animales</h2>
-                </div>
-            </div> 
-
-            <div class="container">
-                <div class="row">
-                    <div class="img1 col-12 col-lg-4"><img src="../img/pato mandarin.jpg" alt="pato mandarin" width="500px" height="600px"></div>
-                    <div class="img1 col-12 col-lg-4"><img src="../img/caballo.jpg" alt="caballos" width="500px" height="600px"></div>
-                    <div class="img1 col-12 col-lg-4"><img src="../img/perro.jpg" alt="perro" width="500px" height="600px"></div>
-                </div>
-            </div>
-        </section>
+                    <div class="img1 col-12 col-lg-4"><img id="lago" src="../img/lago.jpg" alt="lago" width="550px" height="650px"></div>
+                    <div class="img1 col-12 col-lg-4"><img id="parque" src="../img/parque.jpg" alt="parque" width="550px" height="650px"></div>
+                    <div class="img1 col-12 col-lg-4"><img id="la-lucila-del-mar" src="../img/amanecer1.jpg" alt="amanecer en el muelle de La Lucila del Mar" width="550px" height="650px"></div>
+    
         
+                    <div class col-12 col-lg-12>
+                        <h2 id="animales" >Animales</h2>
+                    </div>
+            
+                    <div class="img1 col-12 col-lg-4"><img id="pato" src="../img/pato mandarin.jpg" alt="pato mandarin" width="550px" height="650px"></div>
+                    <div class="img1 col-12 col-lg-4"><img id="caballos" src="../img/caballo.jpg" alt="caballos" width="550px" height="650px"></div>
+                    <div class="img1 col-12 col-lg-4"><img id="perro" src="../img/perro.jpg" alt="perro" width="550px" height="650px"></div>
+                    </div>
+                </div>
+            </section>
+        
+        
+        </div>
     </main>
 
     <footer>
@@ -99,26 +90,26 @@
     
     
         <!-- formulario -->
-        <div class="container">
-            <form class="row g-3">
-                <div class="col-6">
-                    <label for="nombre"></label>
-                    <input type="text" name="Nombre" placeholder="Nombre">
-                </div>
-                <div class="col-6">
-                    <label for="correo"></label>
-                    <input type="email" name="Correo" placeholder="e-mail">
-                </div>
-                <div class="col-12">
-                    <label for="mensaje"></label>
-                    <textarea name="mensaje" id="" cols="114" rows="8" placeholder="Escribe tu mensaje"></textarea>
-                </div> 
-                <div class="col-12">
-                <button class="btn btn-primary" type="submit">Enviar</button>  
-                </div>
-            </form>
+            <div class="container">
+                <form class="row g-3">
+                    <div class="col-6">
+                        <label for="nombre"></label>
+                        <input type="text" name="Nombre" placeholder="Nombre">
+                    </div>
+                    <div class="col-6">
+                        <label for="correo"></label>
+                        <input type="email" name="Correo" placeholder="e-mail">
+                    </div>
+                    <div class="col-12">
+                        <label for="mensaje"></label>
+                        <textarea name="mensaje" id="" cols="114" rows="8" placeholder="Escribe tu mensaje"></textarea>
+                    </div> 
+                    <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>  
+                    </div>
+                </form>
+            </div>
         </div>
-        </div>
-        </footer>
+    </footer>
 </body>
 </html>
