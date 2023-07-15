@@ -13,9 +13,9 @@
 body{
     display: grid;
     grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer"
+    "header"
+    "main"
+    "footer"
     ;
 }
 
@@ -174,7 +174,6 @@ nav li a:hover{
     font-size: 25px;
     display: flex;
     align-items: center;
-    margin-left: 550px;
     margin-top: 100px;
 }
 
@@ -183,7 +182,6 @@ nav li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 300px;
 }
 
 .parrafo1 p{
@@ -199,7 +197,6 @@ nav li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 200px;
     margin-right: 200px;
     margin-top: 80px;
 }
@@ -217,7 +214,6 @@ nav li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 200px;
     margin-right: 200px;
     margin-top: 50px;
 }
@@ -273,7 +269,6 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 10px;
 }
 
 #email{
@@ -282,7 +277,6 @@ footer{
     display: flex;
     justify-content: end;
     margin-top: 16px;
-    margin-left: 10px;
 }
 
 .fila{
@@ -331,7 +325,6 @@ form {
 
 .btn-primary{ /*boton enviar*/
     display: flex;
-    margin-left: 1000px;
     background-color: rgb(166, 138, 47);
 }
 
@@ -525,7 +518,7 @@ form {
         ;
     }
 
-    .grid-container{
+    main .grid-container{
         background-color: rgb(248, 222, 222);
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6,1fr)
