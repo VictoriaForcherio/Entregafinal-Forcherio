@@ -71,7 +71,7 @@ nav{
 }
 
 nav li a:hover{
-    color: rgb(166, 138, 47);
+    color: rgb(118, 213, 167);
 }
 
 #icono-email{
@@ -86,13 +86,11 @@ nav li a:hover{
 .imagenPrincipal{
     grid-area: foto;
     height: 700px;
-    width: 600px;
 }
 
 .presentacion1{
     grid-area: texto1;
     height: 700px;
-    width: 1100px;
 }
 
 .presentacion1{
@@ -197,7 +195,6 @@ nav li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 200px;
     margin-top: 80px;
 }
 
@@ -209,12 +206,11 @@ nav li a:hover{
     margin-bottom: 10px;
 }
 
-.parrafo3 {
+.parrafo3{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 200px;
     margin-top: 50px;
 }
 
@@ -519,9 +515,8 @@ form {
     }
 
     main .grid-container{
-        background-color: rgb(248, 222, 222);
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,1fr)
+        grid-template-rows:800px 1000px 500px 700px 350px 700px;
         grid-template-areas:
         "texto1"
         "foto"
@@ -533,8 +528,7 @@ form {
 
     .presentacionImagenes{
         display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-rows: 500px;
+        grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
     }
@@ -543,6 +537,31 @@ form {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .parrafo2{
+        text-align: center;
+    }
+
+    #capturando1{
+        display: none;
+    }
+
+    #capturando2{
+        display: none;
+    }
+
+    .parrafo3{
+        text-align: center;
+    }
+
+    .container-carrusel{
+    width: 100%; 
+    ;
+    }
+    
+    .miClase img {
+    height: auto; 
     }
 
     }
