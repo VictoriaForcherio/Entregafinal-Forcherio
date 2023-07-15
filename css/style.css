@@ -47,6 +47,23 @@ header{
 
 /*menu de navegacion*/
 
+@media (min-width: 992px) {
+    .navbar {
+    background-color:rgba(248, 247, 244, 0.967);
+    height: 50%;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: start
+    }
+
+    .navbar-brand {
+    display: none;
+    }
+}
+
+
 nav ul li{
     list-style-type: none;
     display: inline;
@@ -60,6 +77,7 @@ nav ul li a{
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 nav{
     display: flex;
@@ -76,6 +94,15 @@ nav li a:hover{
 
 #icono-whatsapp{
     cursor: pointer;
+}
+
+.iconos-de-contacto {
+    display: flex;
+    align-items: center;
+}
+
+.contacto-item {
+    margin-right: 10px;
 }
 
 /* MAIN */
@@ -325,8 +352,7 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 1400px;
-    padding: 10px 5%;
+    height: 100%
 }
 
 .main-pag img{
@@ -338,6 +364,7 @@ form {
     transition: .5s;
     transform: scale(1.1);
     cursor: pointer;
+    border-radius: 10px;
     box-shadow:0 0 10px rgb(154, 154, 154);
 }
 
@@ -349,28 +376,7 @@ form {
     font-size: 40px;
 }
 
-#cabildo{ /*margenes de las imagenes*/
-    padding: 25px;
-    margin-bottom: 50px;
-}
-
-#av-9-de-julio{
-    padding: 25px
-}
-
-#obelisco{
-    padding: 25px
-}
-
-#palacio-de-la-legislatura{
-    padding: 25px
-}
-
-#puerto-madero{
-    padding: 25px
-}
-
-#congreso{
+#cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso{
     padding: 25px
 }
 
@@ -378,9 +384,7 @@ form {
 
 .main-nat-anim{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 1500px;
     padding: 10px 5%;
 }
 
@@ -395,7 +399,12 @@ form {
 #naturaleza{ /*primer subtitulo*/
     text-align: center;
     font-size: 30px; 
-    margin: 10px;
+    margin: 5px;
+}
+
+#lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro {
+    max-width: 100%;
+    height: auto;
 }
 
 #animales{ /*segundo subtitulo*/
@@ -404,28 +413,8 @@ form {
     margin: 10px;
 }
 
-#lago{ /*margenes de las imagenes*/
+#lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro{ 
     padding: 25px;
-}
-
-#parque{
-    padding: 25px
-}
-
-#la-lucila-del-mar{
-    padding: 25px
-}
-
-#pato{
-    padding: 25px
-}
-
-#caballos{
-    padding: 25px
-}
-
-#perro{
-    padding: 25px
 }
 
 
@@ -437,30 +426,18 @@ form {
     font-size: 40px;
 }
 
-#dama{ /*margenes de las imagenes*/
+.container{
+    position: relative;
+    top: 7%;
+}
+
+.main-pag{
+    height: auto;
+}
+
+#dama, #chaplin, #campesino, #dumbledore, #mcgonagall, #tyrion { 
     padding: 25px;
 }
-
-#chaplin{
-    padding: 25px
-}
-
-#campesino{
-    padding: 25px
-}
-
-#dumbledore{
-    padding: 25px
-}
-
-#mcgonagall{
-    padding: 25px
-}
-
-#tyrion{
-    padding: 25px
-}
-
 
             /*pagina: lugares para visitar*/
 #lugares{ /*titulo*/
@@ -470,7 +447,7 @@ form {
     font-size: 40px;
 }
 
-#campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{ /*margenes de las imagenes*/
+#campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{
     padding: 25px;
 }
 
@@ -496,6 +473,20 @@ form {
         "imagenes"
         "texto3"
         "carrusel"
+    }
+
+    .navbar-collapse{
+        width: 200px;
+    }
+
+    .navbar-nav {
+        height: 500px;
+        overflow-y: auto;
+        margin-top: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 0px;
     }
 
     .presentacionImagenes{
@@ -535,7 +526,8 @@ form {
     .miClase img {
     height: auto; 
     }
-    
+
+    /*Páginas*/
     .main-pag{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6,1fr)
@@ -545,17 +537,58 @@ form {
         height: auto;
     }
 
-    #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{ /*margenes de las imagenes*/
+    .mobile-header{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "header"
+            "main"
+            "footer"
+            ;
+        }
+
+    .mobile-header{
+        width: 100%;
+    }
+
+    .mobile-body{
+        width: 100%;
+    }
+
+    /*Postales de Bs. As.*/
+    #cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{
         width: 50%;
         height: 100%;
     }
 
+    /*Naturaleza y animales*/
+    #lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
     }
 
-    
+    /*Retrato*/
+    #dama, #chaplin, #campesino, #dumbledore, #mcgonagall, #tyrion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+
+
+    /*Lugares para visitar*/
+    #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+
+}
