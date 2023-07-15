@@ -19,13 +19,9 @@ body{
     ;
 }
 
-header,main,footer{
-    width: 100%;
-}
-
 /* HEADER */
 *{
-    padding: 0;
+    padding: 5px;
     margin: 0;
 }
 
@@ -158,7 +154,6 @@ nav li a:hover{
     width: 85%;
     height: auto;
     margin-top: 100px;
-    margin-right: 180px;
 }
 
 .fotoPrincipal img{
@@ -171,7 +166,7 @@ nav li a:hover{
     font-family:cursive;
     font-size: 25px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-top: 100px;
 }
 
@@ -321,14 +316,11 @@ form {
 
 .btn-primary{ /*boton enviar*/
     display: flex;
+    justify-content: flex-end;
     background-color: rgb(166, 138, 47);
 }
 
 /*PÁGINAS*/
-.main-pag{
-    width: 160% ;
-}
-
 .main-pag{
     display: flex;
     justify-content: space-between;
@@ -478,28 +470,8 @@ form {
     font-size: 40px;
 }
 
-#campanopolis{ /*margenes de las imagenes*/
+#campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{ /*margenes de las imagenes*/
     padding: 25px;
-}
-
-#teatro{
-    padding: 25px
-}
-
-#puente-transbordador{
-    padding: 25px
-}
-
-#museo{
-    padding: 25px
-}
-
-#iglesia-museo{
-    padding: 25px
-}
-
-#fundacion{
-    padding: 25px
 }
 
 /*MOVIL*/
@@ -562,6 +534,26 @@ form {
     
     .miClase img {
     height: auto; 
+    }
+    
+    .main-pag{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr)
+    }
+
+    .main-pag{
+        height: auto;
+    }
+
+    #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{ /*margenes de las imagenes*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{
+        width: 50%;
+        height: 100%;
     }
 
     }
