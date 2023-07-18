@@ -1,0 +1,19 @@
+@font-face {
+    font-family:roboto ;
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family:cursive;
+    src: url("../fonts/CedarvilleCursive-Regular.ttf")
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap'); 
+
+@import "variables";
+@import "generales";
+@import "header"; 
+@import "main";
+@import "footer";
+@import "paginas";
+@import "movil"; 

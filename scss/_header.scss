@@ -1,0 +1,72 @@
+/* HEADER */
+header{
+    grid-area: header;
+    background-color:rgba(248, 247, 244, 0.967);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 5%;
+}
+
+#logo{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 55px;
+}
+
+/*menu de navegacion*/
+
+@media (min-width: 992px) {
+    .navbar {
+    background-color:rgba(248, 247, 244, 0.967);
+    height: 50%;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: start
+    }
+
+    .navbar-brand {
+    display: none;
+    }
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    ul li{
+        list-style-type: none;
+        display: inline;
+        a{
+            font-size: 25px;
+            color: black;
+            padding:20px;
+            margin: 40px;
+            text-decoration: none;
+            font-family: $fuente-principal;
+            & hover{
+                color:$color-estilo;
+            }
+        }
+    }
+}
+
+#icono-email{
+    cursor: pointer;
+}
+
+#icono-whatsapp{
+    cursor: pointer;
+}
+
+.iconos-de-contacto {
+    display: flex;
+    align-items: center;
+}
+
+.contacto-item {
+    margin-right: 10px;
+}

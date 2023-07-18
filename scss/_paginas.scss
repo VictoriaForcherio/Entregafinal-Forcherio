@@ -1,0 +1,97 @@
+/*PÁGINAS*/
+.main-pag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    img{
+        width: 120%;
+        height: 90%;
+        & hover{ /*diseño para todas las imagenes de las paginas*/
+            transition: .5s;
+            transform: scale(1.1);
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow:0 0 10px rgb(154, 154, 154);
+        }
+    }
+}
+
+            /*pagina: postales de Buenos Aires*/
+#postales{ /*titulo*/
+    font-family: $fuente-paginas;
+    color: $color-estilo;
+    text-align: center;
+    font-size: 40px;
+}
+
+#cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso{
+    padding: 25px
+}
+
+            /*pagina: naturaleza y animales*/
+
+.main-nat-anim{
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+#naturalezaAnimales{ /*titulo*/
+    font-family: $fuente-paginas;
+    color: $color-estilo;
+    text-align: center;
+    font-size: 40px;
+    top: 100px;
+}
+
+#naturaleza{ /*primer subtitulo*/
+    text-align: center;
+    font-size: 30px; 
+    margin: 5px;
+}
+
+#lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro {
+    max-width: 100%;
+    height: auto;
+}
+
+#animales{ /*segundo subtitulo*/
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro{ 
+    padding: 25px;
+}
+
+
+            /*pagina: retrato*/
+#retrato{ /*titulo*/
+    font-family: $fuente-paginas;
+    color: $color-estilo;
+    text-align: center;
+    font-size: 40px;
+}
+
+.container{
+    position: relative;
+    top: 7%;
+}
+
+#dama, #chaplin, #campesino, #dumbledore, #mcgonagall, #tyrion { 
+    padding: 25px;
+}
+
+            /*pagina: lugares para visitar*/
+#lugares{ /*titulo*/
+    font-family:$fuente-paginas;
+    color: $color-estilo;
+    text-align: center;
+    font-size: 40px;
+}
+
+#campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{
+    padding: 25px;
+}

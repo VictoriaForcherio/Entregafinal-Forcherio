@@ -1,0 +1,134 @@
+
+/*MOVIL*/
+@media (max-width: 576px){
+
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+
+    main .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows:800px 1000px 500px 700px 350px 700px;
+        grid-template-areas:
+        "texto1"
+        "foto"
+        "texto2"
+        "imagenes"
+        "texto3"
+        "carrusel"
+    }
+
+    .navbar-collapse{
+        width: 200px;
+    }
+
+    .navbar-nav {
+        height: 500px;
+        overflow-y: auto;
+        margin-top: 100%;
+        .nav-item {
+            margin-bottom: 0px;
+        }
+    }
+
+    .presentacionImagenes{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .fotoPrincipal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parrafo2{
+        text-align: center;
+    }
+
+    #capturando1{
+        display: none;
+    }
+
+    #capturando2{
+        display: none;
+    }
+
+    .parrafo3{
+        text-align: center;
+    }
+
+    .container-carrusel{
+        width: 100%; 
+    }
+    
+    .miClase img {
+    height: auto; 
+    }
+
+    /*Páginas*/
+    .main-pag{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr)
+    }
+
+    .mobile-header{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+
+    .mobile-body{
+        width: 100%;
+    }
+
+    /*Postales de Bs. As.*/
+    #cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+
+    /*Naturaleza y animales*/
+    #lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+
+    /*Retrato*/
+    #dama, #chaplin, #campesino, #dumbledore, #mcgonagall, #tyrion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+
+
+    /*Lugares para visitar*/
+    #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+
+}

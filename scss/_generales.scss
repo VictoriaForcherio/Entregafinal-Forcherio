@@ -1,0 +1,13 @@
+*{
+    padding: 5px;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
