@@ -1,6 +1,7 @@
 /*FOOTER*/
 footer{
-    background-color:rgba(248, 247, 244, 0.967);
+    height: 630px;
+    background-color:$navFooter;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,12 +10,15 @@ footer{
     grid-area: footer;
 }
 
+.footer{
+    height: 630px;
+}
+
 
 /*titulo del footer*/
 #tituloContacto{
     font-family: $fuente-principal;
     color: $color-estilo;
-    font-size: 40px;
     text-align: center;
 
 }
@@ -61,6 +65,7 @@ form {
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
 }
 
 .col-12{

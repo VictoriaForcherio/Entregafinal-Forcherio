@@ -90,8 +90,69 @@ nav ul li a hover {
 
 /* MAIN */
 .imagenPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: foto;
   height: 700px;
+}
+
+.fotoPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fotoPrincipal img {
+  width: 85%;
+  height: auto;
+  margin-top: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(154, 154, 154);
+}
+
+.titulo {
+  font-family: cursive;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.parrafo1 p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+.parrafo2 {
+  margin-top: 80px;
+}
+.parrafo2 p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.parrafo3 {
+  margin-top: 50px;
+}
+.parrafo3 p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.grid-container {
+  max-width: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 700px 250px 500px 400px 900px;
+  grid-template-areas: "texto1 texto1 foto" "texto2 texto2 texto2" "imagenes imagenes imagenes" "texto3 texto3 texto3" "carrusel carrusel carrusel";
 }
 
 .presentacion1 {
@@ -121,6 +182,9 @@ nav ul li a hover {
 #capturando1, #capturando2, #capturando3 {
   width: 70%;
   height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(154, 154, 154);
 }
 
 .presentacion3 {
@@ -142,90 +206,10 @@ nav ul li a hover {
   height: 900px;
 }
 
-.imagenPrincipal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fotoPrincipal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.fotoPrincipal img {
-  width: 85%;
-  height: auto;
-  margin-top: 100px;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgb(154, 154, 154);
-}
-
-.titulo {
-  font-family: cursive;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-}
-
-.parrafo1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.parrafo1 p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 27px;
-  line-height: 1.5;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.parrafo2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 80px;
-}
-.parrafo2 p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 27px;
-  line-height: 1.5;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.parrafo3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-.parrafo3 p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 27px;
-  line-height: 1.5;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.grid-container {
-  max-width: none;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 700px 250px 500px 300px 900px;
-  grid-template-areas: "texto1 texto1 foto" "texto2 texto2 texto2" "imagenes imagenes imagenes" "texto3 texto3 texto3" "carrusel carrusel carrusel";
-}
-
 /*FOOTER*/
 footer {
-  background-color: rgba(248, 247, 244, 0.967);
+  height: 630px;
+  background-color: gris;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -234,11 +218,14 @@ footer {
   grid-area: footer;
 }
 
+.footer {
+  height: 630px;
+}
+
 /*titulo del footer*/
 #tituloContacto {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(166, 138, 47);
-  font-size: 40px;
   text-align: center;
 }
 
@@ -283,6 +270,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5px;
 }
 
 .col-12 {
@@ -321,19 +309,14 @@ form {
   box-shadow: 0 0 10px rgb(154, 154, 154);
 }
 
-/*pagina: postales de Buenos Aires*/
-#postales { /*titulo*/
-  font-family: "roboto";
-  color: rgb(166, 138, 47);
-  text-align: center;
-  font-size: 40px;
-}
+/*postales de Buenos Aires*/
+#postales { /*titulo*/ }
 
 #cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso {
   padding: 25px;
 }
 
-/*pagina: naturaleza y animales*/
+/* naturaleza y animales*/
 .main-nat-anim {
   display: flex;
   align-items: center;
@@ -341,16 +324,11 @@ form {
 }
 
 #naturalezaAnimales { /*titulo*/
-  font-family: "roboto";
-  color: rgb(166, 138, 47);
-  text-align: center;
-  font-size: 40px;
   top: 100px;
 }
 
 #naturaleza { /*primer subtitulo*/
   text-align: center;
-  font-size: 30px;
   margin: 5px;
 }
 
@@ -361,7 +339,6 @@ form {
 
 #animales { /*segundo subtitulo*/
   text-align: center;
-  font-size: 30px;
   margin: 10px;
 }
 
@@ -369,13 +346,8 @@ form {
   padding: 25px;
 }
 
-/*pagina: retrato*/
-#retrato { /*titulo*/
-  font-family: "roboto";
-  color: rgb(166, 138, 47);
-  text-align: center;
-  font-size: 40px;
-}
+/*Retrato*/
+#retrato { /*titulo*/ }
 
 .container {
   position: relative;
@@ -386,13 +358,8 @@ form {
   padding: 25px;
 }
 
-/*pagina: lugares para visitar*/
-#lugares { /*titulo*/
-  font-family: "roboto";
-  color: rgb(166, 138, 47);
-  text-align: center;
-  font-size: 40px;
-}
+/*Lugares para visitar*/
+#lugares { /*titulo*/ }
 
 #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion {
   padding: 25px;
@@ -495,6 +462,38 @@ form {
     width: 50%;
     height: 100%;
   }
+}
+/*condicionales*/
+footer {
+  background-color: rgba(248, 247, 244, 0.967);
+}
+
+/*maps*/
+/*map-get*/
+.parrafo1 p, .parrafo2 p, .parrafo3 p {
+  font-size: 27px;
+}
+
+#naturaleza, #animales {
+  font-size: 30px;
+}
+
+#tituloContacto, #postales, #naturalezaAnimales, #retrato, #lugares {
+  font-size: 40px;
+}
+
+/*Extend*/
+.flex-center, .parrafo1, .parrafo2, .parrafo3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.estilo-titulos, #postales, #naturalezaAnimales, #retrato, #lugares {
+  font-family: "roboto";
+  color: rgb(166, 138, 47);
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

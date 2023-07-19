@@ -17,20 +17,16 @@
     }
 }
 
-            /*pagina: postales de Buenos Aires*/
+/*postales de Buenos Aires*/
 #postales{ /*titulo*/
-    font-family: $fuente-paginas;
-    color: $color-estilo;
-    text-align: center;
-    font-size: 40px;
+    @extend .estilo-titulos;
 }
 
 #cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso{
     padding: 25px
 }
 
-            /*pagina: naturaleza y animales*/
-
+/* naturaleza y animales*/
 .main-nat-anim{
     display: flex;
     align-items: center;
@@ -38,16 +34,12 @@
 }
 
 #naturalezaAnimales{ /*titulo*/
-    font-family: $fuente-paginas;
-    color: $color-estilo;
-    text-align: center;
-    font-size: 40px;
+    @extend .estilo-titulos;
     top: 100px;
 }
 
 #naturaleza{ /*primer subtitulo*/
     text-align: center;
-    font-size: 30px; 
     margin: 5px;
 }
 
@@ -58,7 +50,6 @@
 
 #animales{ /*segundo subtitulo*/
     text-align: center;
-    font-size: 30px;
     margin: 10px;
 }
 
@@ -67,12 +58,9 @@
 }
 
 
-            /*pagina: retrato*/
+/*Retrato*/
 #retrato{ /*titulo*/
-    font-family: $fuente-paginas;
-    color: $color-estilo;
-    text-align: center;
-    font-size: 40px;
+    @extend .estilo-titulos;
 }
 
 .container{
@@ -84,12 +72,9 @@
     padding: 25px;
 }
 
-            /*pagina: lugares para visitar*/
+/*Lugares para visitar*/
 #lugares{ /*titulo*/
-    font-family:$fuente-paginas;
-    color: $color-estilo;
-    text-align: center;
-    font-size: 40px;
+    @extend .estilo-titulos;
 }
 
 #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{
