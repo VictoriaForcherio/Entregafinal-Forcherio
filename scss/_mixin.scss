@@ -1,0 +1,12 @@
+/*Mixin*/
+@mixin parrafos($text, $left, $right) {
+    text-align: $text;
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin flex($display, $ejeX, $ejeY){
+    display: $display;
+    justify-content: $ejeX;
+    align-items: $ejeY;
+}

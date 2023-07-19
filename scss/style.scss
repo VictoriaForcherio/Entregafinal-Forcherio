@@ -11,63 +11,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap'); 
 
 @import "variables";
+@import "condicionales";
+@import "map-get";
+@import "extend";
+@import "mixin";
 @import "generales";
 @import "header"; 
 @import "main";
 @import "footer";
 @import "paginas";
 @import "movil"; 
-
-
-/*condicionales*/
-@if $navFooter == gris{
-    footer{
-        background-color: rgba(248, 247, 244, 0.967);
-    }
-}
-
-@else if $navFooter == verde{
-    footer{
-        background-color:#ABEBC6;
-    }
-}
-
-@else{
-    footer{
-        background-color: none;
-    }
-}
-
-/*maps*/
-$tamañoFuente:(
-    pequeña: 27px,
-    media: 30px,
-    grande: 40px,
-);
-
-/*map-get*/
-.parrafo1 p, .parrafo2 p, .parrafo3 p{
-    font-size: map-get($tamañoFuente, pequeña);
-}
-
-#naturaleza, #animales{
-    font-size: map-get($tamañoFuente, media);
-}
-
-#tituloContacto, #postales, #naturalezaAnimales, #retrato, #lugares{
-    font-size: map-get($tamañoFuente, grande);
-}
-
-/*Extend*/
-.flex-center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.estilo-titulos{
-    font-family:$fuente-paginas;
-    color: $color-estilo;
-    text-align: center;
-}

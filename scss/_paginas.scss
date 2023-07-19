@@ -1,8 +1,6 @@
 /*PÁGINAS*/
 .main-pag{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(flex, space-between, center);
     height: auto;
     img{
         width: 120%;
@@ -28,8 +26,7 @@
 
 /* naturaleza y animales*/
 .main-nat-anim{
-    display: flex;
-    align-items: center;
+    @include flex(flex, center, center);
     padding: 10px 5%;
 }
 

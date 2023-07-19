@@ -347,7 +347,9 @@ form {
 }
 
 /*Retrato*/
-#retrato { /*titulo*/ }
+#retrato { /*titulo*/ 
+  @extend .estilo-titulos;
+}
 
 .container {
   position: relative;

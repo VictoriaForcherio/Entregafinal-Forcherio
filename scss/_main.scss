@@ -1,16 +1,12 @@
 /* MAIN */
 .imagenPrincipal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center);
     grid-area: foto;
     height: 700px;
 }
 
 .fotoPrincipal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center);
     img {
         width: 85%;
         height: auto;
@@ -24,8 +20,7 @@
 .titulo{
     font-family:cursive;
     font-size: 25px;
-    display: flex;
-    justify-content: center;
+    @include flex(flex, center, center);
     margin-top: 100px;
 }
 
@@ -33,9 +28,7 @@
     @extend .flex-center;
     p{
         font-family: $fuente-principal;
-        text-align: center;
-        margin-left: 15%;
-        margin-right: 5%;
+        @include parrafos(center, 15%, 5%);
     }
 }
 
@@ -44,9 +37,7 @@
     margin-top: 80px;
     p{
         font-family: $fuente-principal;
-        text-align: center;
-        margin-left: 10%;
-        margin-right: 10%;
+        @include parrafos(center, 10%, 10%);
     }
 }
 
@@ -55,9 +46,7 @@
     margin-top: 50px;
     p{
         font-family: $fuente-principal;
-        text-align: center;
-        margin-left: 10%;
-        margin-right: 10%;
+        @include parrafos(center, 10%, 10%);
     }
 }
 
@@ -113,9 +102,7 @@
 }
 
 .container-carrusel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center);
     grid-area: carrusel;
 }
 

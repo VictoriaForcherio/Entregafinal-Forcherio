@@ -8,7 +8,40 @@
   font-family: cursive;
   src: url("../fonts/CedarvilleCursive-Regular.ttf");
 }
-/*Variables*/
+/*Variables*/ /*condicionales*/
+footer {
+  background-color: rgba(248, 247, 244, 0.967);
+}
+
+/*maps*/
+/*map-get*/
+.parrafo1 p, .parrafo2 p, .parrafo3 p {
+  font-size: 27px;
+}
+
+#naturaleza, #animales {
+  font-size: 30px;
+}
+
+#tituloContacto, #postales, #naturalezaAnimales, #retrato, #lugares {
+  font-size: 40px;
+}
+
+/*Extend*/
+.flex-center, .parrafo3, .parrafo2, .parrafo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.estilo-titulos, #lugares, #retrato, #naturalezaAnimales, #postales {
+  font-family: "roboto";
+  color: rgb(166, 138, 47);
+  text-align: center;
+}
+
+/*Mixin*/
 * {
   padding: 5px;
   margin: 0;
@@ -116,6 +149,7 @@ nav ul li a hover {
   font-size: 25px;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 100px;
 }
 
@@ -319,6 +353,7 @@ form {
 /* naturaleza y animales*/
 .main-nat-anim {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 10px 5%;
 }
@@ -462,38 +497,6 @@ form {
     width: 50%;
     height: 100%;
   }
-}
-/*condicionales*/
-footer {
-  background-color: rgba(248, 247, 244, 0.967);
-}
-
-/*maps*/
-/*map-get*/
-.parrafo1 p, .parrafo2 p, .parrafo3 p {
-  font-size: 27px;
-}
-
-#naturaleza, #animales {
-  font-size: 30px;
-}
-
-#tituloContacto, #postales, #naturalezaAnimales, #retrato, #lugares {
-  font-size: 40px;
-}
-
-/*Extend*/
-.flex-center, .parrafo1, .parrafo2, .parrafo3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.estilo-titulos, #postales, #naturalezaAnimales, #retrato, #lugares {
-  font-family: "roboto";
-  color: rgb(166, 138, 47);
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

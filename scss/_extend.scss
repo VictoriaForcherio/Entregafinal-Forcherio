@@ -1,0 +1,13 @@
+/*Extend*/
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estilo-titulos{
+    font-family:$fuente-paginas;
+    color: $color-estilo;
+    text-align: center;
+}

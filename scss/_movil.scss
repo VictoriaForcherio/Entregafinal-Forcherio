@@ -44,9 +44,7 @@
     }
 
     .fotoPrincipal {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
     }
 
     .parrafo2{
@@ -96,27 +94,21 @@
 
     /*Postales de Bs. As.*/
     #cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
         width: 50%;
         height: 100%;
     }
 
     /*Naturaleza y animales*/
     #lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
         width: 50%;
         height: 100%;
     }
 
     /*Retrato*/
     #dama, #chaplin, #campesino, #dumbledore, #mcgonagall, #tyrion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
         width: 50%;
         height: 100%;
     }
@@ -124,9 +116,7 @@
 
     /*Lugares para visitar*/
     #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
         width: 50%;
         height: 100%;
     }
