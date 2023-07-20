@@ -18,9 +18,7 @@
     <!-- Librería de animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-
 </head>
-<body>
     <header>
         <div>
             <!-- logo -->
@@ -55,10 +53,12 @@
                 </ul>
                 <div class="iconos-de-contacto">
                     <div class="contacto-item">
-                        <img id="icono-email" src="./img/email.png" alt="icono de correo electrónico" width="45" height="50">
+                        <a href="mailto:cuandoenfoco@gmail.com" target="_blank">
+                        <img id="icono-email" src="./img/email.png" alt="icono de correo electrónico" width="45" height="50"></a>
                     </div>
                     <div class="contacto-item">
-                        <img id="icono-whatsapp" src="./img/instagram.png" alt="icono de Instagram" width="50" height="50">
+                        <a href="https://www.instagram.com/cuandoenfoco/" target="_blank">
+                        <img id="icono-instagram" src="./img/instagram.png" alt="icono de Instagram" width="50" height="50"></a>
                     </div>
                 </div>
             </div>
@@ -109,9 +109,10 @@
                 </div>
             </section>
 
-            <section class="container-carrusel"> <!-- Carrusel de instagram -->
-                        <div id="carouselExampleControls" class="carousel slide miClase" data-bs-ride="carousel" width="400">
+            <section class="container-carrusel"> <!-- Carrusel de instagram -->       
+                <div id="carouselExampleControls" class="carousel slide miClase" data-bs-ride="carousel" width="400">
                             <div class="carousel-inner text center animate__animated animate__fadeIn">
+                                <a href="https://www.instagram.com/cuandoenfoco/" target="_blank"> 
                                 <div class="carousel-item active">
                                     <img src="./img/insta1.jpg" class="d-block w-100" alt="insta1">
                                 </div>
@@ -136,6 +137,7 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
+                            </a>
                         </div>
             </section>
         </div>
@@ -151,12 +153,14 @@
 <!-- iconos e informacion de contacto-->  
     <div class="contacto animate__animated animate__fadeInDown">
         <div class="fila">
-            <img id="iconoWhatsapp" src="./img/whatsapp.png" alt="icono de whatsapp" width="35" height="35">
+            <a href="https://wa.me/5491163742404" target="_blank">
+            <img id="iconoWhatsapp" src="./img/whatsapp.png" alt="icono de whatsapp" width="35" height="35"></a>
             <p id="whatsapp">+54 9 11 6374-2404</p>
         </div>
 
         <div class="fila">
-            <img id="iconoCorreo2" src="./img/email.png" alt="icono de correo electronico" width="35" height="35">
+            <a href="mailto:cuandoenfoco@gmail.com" target="_blank">
+            <img id="iconoCorreo2" src="./img/email.png" alt="icono de correo electronico" width="35" height="35"></a>
             <p id="email">cuandoenfoco@gmail.com</p>
         </div>
     </div>
