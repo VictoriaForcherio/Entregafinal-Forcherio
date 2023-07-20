@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="../css/style.css">
 
+    <!-- Librería de animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
 </head>
 <body>
@@ -66,16 +69,16 @@
     <main> 
         <div class="grid-container">
             <section class="imagenPrincipal"><!-- imagen principal -->
-                <div class="fotoPrincipal"> 
+                <div class="fotoPrincipal animate__animated animate__fadeIn"> 
                     <img id="imagen1" src="./Img/presentación.jpg" alt="mujer sacando una foto">
                 </div>
             </section>
 
             <section class="presentacion1"> <!-- texto de presentacion. Primera parte -->
                 <div class="titulo">     
-                    <h1>Cuando Enfoco</h1>
+                    <h1 class="animate__animated animate__fadeInDown">Cuando Enfoco</h1>
                 </div>
-                <div class="parrafo1">
+                <div class="parrafo1 animate__animated animate__fadeInLeft">
                     <br>
                     <p>Mi nombre es Ayelén y me considero una apasionada de la fotografía.</p>
                     <br>
@@ -86,19 +89,19 @@
             </section>       
             
             <section class="presentacion2"> <!-- texto de presentacion. Segunda parte -->
-                <div class="parrafo2">
+                <div class="parrafo2 animate__animated animate__fadeInRight">
                     <p> Me gusta mucho la variedad de temas que puedo explorar a través de la fotografía, mi mayor fuente de inspiración es Buenos Aires. Cada rincón de esta maravillosa ciudad tiene una historia que contar y una imagen que capturar. Me encanta pasear por sus calles, descubrir sus secretos y capturar su esencia en mis fotografías. </p>
                 </div>
             </section>
 
-            <section class="presentacionImagenes"> <!-- imagenes del inicio-->
+            <section class="presentacionImagenes animate__animated animate__fadeIn"> <!-- imagenes del inicio-->
                 <img id="capturando1" src="./img/capturando1.jpg" alt="mujer sacando foto en bariloche">
                 <img id="capturando2" src="img/capturando2.jpg" alt="mujer sacando una foto en el pasto">
                 <img id="capturando3" src="img/capturando3.jpg" alt="mujer sacando foto en el canal de beagle">
             </section>
 
             <section class="presentacion3"> <!-- texto de presentacion. Tercera parte -->
-                <div class="parrafo3">
+                <div class="parrafo3 animate__animated animate__fadeInLeft">
                     <p>Disfruto capturar desde paisajes impresionantes hasta la belleza de la naturaleza y la diversidad de los animales. También disfruto mucho tomar fotos de retratos, ya que encuentro fascinante poder capturar la esencia y la personalidad de hombres y mujeres en imágenes.</p>
                     <br>
                     <br>
@@ -108,7 +111,7 @@
 
             <section class="container-carrusel"> <!-- Carrusel de instagram -->
                         <div id="carouselExampleControls" class="carousel slide miClase" data-bs-ride="carousel" width="400">
-                            <div class="carousel-inner text center">
+                            <div class="carousel-inner text center animate__animated animate__fadeIn">
                                 <div class="carousel-item active">
                                     <img src="./img/insta1.jpg" class="d-block w-100" alt="insta1">
                                 </div>
@@ -136,17 +139,17 @@
                         </div>
             </section>
         </div>
-    </main>-->
+    </main>
 
     <footer>
     <div class="footer">
 
         <div>
-            <h2 id="tituloContacto">Contacto</h2>
+            <h2 class="animate__animated animate__fadeInDown" id="tituloContacto">Contacto</h2>
         </div>
 
 <!-- iconos e informacion de contacto-->  
-    <div class="contacto">
+    <div class="contacto animate__animated animate__fadeInDown">
         <div class="fila">
             <img id="iconoWhatsapp" src="./img/whatsapp.png" alt="icono de whatsapp" width="35" height="35">
             <p id="whatsapp">+54 9 11 6374-2404</p>
@@ -160,7 +163,7 @@
 
 
     <!-- formulario -->
-    <div class="container">
+    <div class="container animate__animated animate__fadeIn">
         <form class="row g-3">
             <div class="col-6">
                 <label for="nombre"></label>
