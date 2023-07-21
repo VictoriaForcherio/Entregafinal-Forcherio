@@ -18,6 +18,7 @@
 /*postales de Buenos Aires*/
 #postales{ /*titulo*/
     @extend .estilo-titulos;
+    font-size: map-get($tamañoFuente, grande);
 }
 
 #cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso{
@@ -32,10 +33,12 @@
 
 #naturalezaAnimales{ /*titulo*/
     @extend .estilo-titulos;
+    font-size: map-get($tamañoFuente, grande);
     top: 100px;
 }
 
 #naturaleza{ /*primer subtitulo*/
+    font-size: map-get($tamañoFuente, media);
     text-align: center;
     margin: 5px;
 }
@@ -46,6 +49,7 @@
 }
 
 #animales{ /*segundo subtitulo*/
+    font-size: map-get($tamañoFuente, media);
     text-align: center;
     margin: 10px;
 }
@@ -58,6 +62,7 @@
 /*Retrato*/
 #retrato{ /*titulo*/
     @extend .estilo-titulos;
+    font-size: map-get($tamañoFuente, grande);
 }
 
 .container{
@@ -72,6 +77,7 @@
 /*Lugares para visitar*/
 #lugares{ /*titulo*/
     @extend .estilo-titulos;
+    font-size: map-get($tamañoFuente, grande);
 }
 
 #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{

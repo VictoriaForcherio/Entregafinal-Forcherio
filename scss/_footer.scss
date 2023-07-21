@@ -18,6 +18,7 @@ footer{
 /*titulo del footer*/
 #tituloContacto{
     font-family: $fuente-principal;
+    font-size: map-get($tamañoFuente, grande);
     color: $color-estilo;
     text-align: center;
 

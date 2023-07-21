@@ -4,16 +4,3 @@ $tamañoFuente:(
     media: 30px,
     grande: 40px,
 );
-
-/*map-get*/
-.parrafo1 p, .parrafo2 p, .parrafo3 p{
-    font-size: map-get($tamañoFuente, pequeña);
-}
-
-#naturaleza, #animales{
-    font-size: map-get($tamañoFuente, media);
-}
-
-#tituloContacto, #postales, #naturalezaAnimales, #retrato, #lugares{
-    font-size: map-get($tamañoFuente, grande);
-}
