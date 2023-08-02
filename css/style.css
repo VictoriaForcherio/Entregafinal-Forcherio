@@ -68,9 +68,6 @@ header {
     display: flex;
     justify-content: start;
   }
-  .navbar-brand {
-    display: none;
-  }
 }
 .navbar-nav .nav-item .nav-link {
   display: flex;
@@ -421,21 +418,37 @@ form {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer";
   }
-  main .grid-container {
+  .main {
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 800px 1000px 500px 700px 350px 700px;
-    grid-template-areas: "texto1" "foto" "texto2" "imagenes" "texto3" "carrusel";
+    grid-template-rows: auto;
+    grid-template-areas: "presentacion1" "imagenPrincipal" "presentacion2" "presentacionImagenes" "presentacion3" "container-carrusel";
   }
-  .navbar-collapse {
-    width: 200px;
+  .presentacion1,
+  .imagenPrincipal,
+  .presentacion2,
+  .presentacionImagenes,
+  .presentacion3,
+  .container-carrusel {
+    width: 100%;
   }
-  .navbar-nav {
-    height: 500px;
-    overflow-y: auto;
-    margin-top: 100%;
+  .presentacion1 {
+    grid-area: presentacion1;
   }
-  .navbar-nav .nav-item {
-    margin-bottom: 0px;
+  .imagenPrincipal {
+    grid-area: imagenPrincipal;
+  }
+  .presentacion2 {
+    grid-area: presentacion2;
+  }
+  .presentacionImagenes {
+    grid-area: presentacionImagenes;
+  }
+  .presentacion3 {
+    grid-area: presentacion3;
+  }
+  .container-carrusel {
+    grid-area: container-carrusel;
   }
   .presentacionImagenes {
     display: grid;
