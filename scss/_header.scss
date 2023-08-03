@@ -52,6 +52,14 @@ header{
     }
 }
 
+.dropdown-item{
+    text-align: center;
+        &:hover{color: $color-estilo;
+            background-color: rgba(230, 221, 221, 0.393);
+            transform: scale(1.1);   
+        }
+    }
+
 #icono-email:hover{
     cursor: pointer;
 }
