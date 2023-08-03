@@ -222,9 +222,6 @@ body {
   .miClase {
     width: 30%;
   }
-  .miClase img {
-    height: 900px;
-  }
 }
 /*FOOTER*/
 @media (min-width: 1024px) {
