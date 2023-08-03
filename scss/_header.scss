@@ -10,10 +10,14 @@ header{
     padding: 5px 5%;
 }
 
-#logo{
+.logo1{
     display: flex;
-    justify-content: flex-start;
-    margin-top: 55px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#logo{
+    margin: 0;
     &:hover{
         cursor: pointer;
         }
