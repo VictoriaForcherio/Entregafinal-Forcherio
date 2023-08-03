@@ -388,16 +388,15 @@ body {
 }
 
 /*MOVIL*/
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer";
   }
-  .main {
-    display: grid;
+  .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "presentacion1" "imagenPrincipal" "presentacion2" "presentacionImagenes" "presentacion3" "container-carrusel";
+    grid-template-areas: "texto1" "foto" "texto2" "imagenes" "texto3" "carrusel";
   }
   .presentacion1,
   .imagenPrincipal,
@@ -408,22 +407,22 @@ body {
     width: 100%;
   }
   .presentacion1 {
-    grid-area: presentacion1;
+    grid-area: texto1;
   }
   .imagenPrincipal {
-    grid-area: imagenPrincipal;
+    grid-area: foto;
   }
   .presentacion2 {
-    grid-area: presentacion2;
+    grid-area: texto2;
   }
   .presentacionImagenes {
-    grid-area: presentacionImagenes;
+    grid-area: imagenes;
   }
   .presentacion3 {
-    grid-area: presentacion3;
+    grid-area: texto3;
   }
   .container-carrusel {
-    grid-area: container-carrusel;
+    grid-area: carrusel;
   }
   .presentacionImagenes {
     display: grid;
@@ -564,6 +563,10 @@ body {
 }
 
 /*MAIN*/
+.grid-container {
+  grid-template-rows: 500px 200px 400px 300px 700px;
+}
+
 .imagenPrincipal {
   display: flex;
   justify-content: center;

@@ -66,6 +66,12 @@
     }
 
 /*MAIN*/
+.grid-container {
+    grid-template-rows: 500px 200px 400px 300px 700px;
+}
+
+
+
 .imagenPrincipal{
     @include flex(flex, center, center);
     grid-area: foto;
