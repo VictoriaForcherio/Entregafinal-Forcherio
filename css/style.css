@@ -119,7 +119,6 @@ body {
     justify-content: center;
     align-items: center;
     grid-area: foto;
-    height: 700px;
   }
   .fotoPrincipal {
     display: flex;
@@ -128,7 +127,6 @@ body {
   }
   .fotoPrincipal img {
     width: 85%;
-    height: auto;
     margin-top: 100px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgb(154, 154, 154);
@@ -186,11 +184,9 @@ body {
   }
   .presentacion1 {
     grid-area: texto1;
-    height: 700px;
     grid-column: 1/3;
   }
   .presentacion2 {
-    height: 250px;
     grid-area: texto2;
   }
   .presentacionImagenes {
@@ -210,13 +206,11 @@ body {
   }
   #capturando1, #capturando2, #capturando3 {
     width: 70%;
-    height: auto;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 0 10px rgb(154, 154, 154);
   }
   .presentacion3 {
-    height: 300px;
     grid-area: texto3;
   }
   .container-carrusel {
@@ -413,7 +407,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
     padding: 5px 5%;
   }
   #logo {
