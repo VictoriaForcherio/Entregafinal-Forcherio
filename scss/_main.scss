@@ -69,6 +69,10 @@
     "carrusel carrusel carrusel"
 }
 
+.grid-container {
+    grid-template-rows: 500px 200px 400px 300px 700px;
+}
+
 .presentacion1{
     grid-area: texto1;
     height: 700px;

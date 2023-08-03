@@ -167,6 +167,9 @@ body {
     grid-template-rows: 700px 250px 500px 400px 900px;
     grid-template-areas: "texto1 texto1 foto" "texto2 texto2 texto2" "imagenes imagenes imagenes" "texto3 texto3 texto3" "carrusel carrusel carrusel";
   }
+  .grid-container {
+    grid-template-rows: 500px 200px 400px 300px 700px;
+  }
   .presentacion1 {
     grid-area: texto1;
     height: 700px;
@@ -387,119 +390,6 @@ body {
   padding: 25px;
 }
 
-/*MOVIL*/
-@media (max-width: 768px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "footer";
-  }
-  .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "texto1" "foto" "texto2" "imagenes" "texto3" "carrusel";
-  }
-  .presentacion1,
-  .imagenPrincipal,
-  .presentacion2,
-  .presentacionImagenes,
-  .presentacion3,
-  .container-carrusel {
-    width: 100%;
-  }
-  .presentacion1 {
-    grid-area: texto1;
-  }
-  .imagenPrincipal {
-    grid-area: foto;
-  }
-  .presentacion2 {
-    grid-area: texto2;
-  }
-  .presentacionImagenes {
-    grid-area: imagenes;
-  }
-  .presentacion3 {
-    grid-area: texto3;
-  }
-  .container-carrusel {
-    grid-area: carrusel;
-  }
-  .presentacionImagenes {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-  }
-  .fotoPrincipal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .parrafo2 {
-    text-align: center;
-  }
-  #capturando1 {
-    display: none;
-  }
-  #capturando2 {
-    display: none;
-  }
-  .parrafo3 {
-    text-align: center;
-  }
-  .container-carrusel {
-    width: 100%;
-  }
-  .miClase img {
-    height: auto;
-  }
-  /*Páginas*/
-  .main-pag {
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-  }
-  .mobile-header {
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "footer";
-  }
-  .mobile-body {
-    width: 100%;
-  }
-  /*Postales de Bs. As.*/
-  #cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-  }
-  /*Naturaleza y animales*/
-  #lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-  }
-  /*Retrato*/
-  #dama, #chaplin, #campesino, #dumbledore, #mcgonagall, #tyrion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-  }
-  /*Lugares para visitar*/
-  #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-  }
-}
 /*TABLET*/
 @media (min-width: 768px) and (max-width: 1023px) {
   /*HEADER*/
@@ -778,6 +668,120 @@ body {
   box-shadow: 0 0 10px rgba(105, 137, 126, 0.822);
   transform: scale(1.1);
   cursor: pointer;
+}
+
+/*MOVIL*/
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "texto1" "foto" "texto2" "imagenes" "texto3" "carrusel";
+  }
+  .presentacion1,
+  .imagenPrincipal,
+  .presentacion2,
+  .presentacionImagenes,
+  .presentacion3,
+  .container-carrusel {
+    width: 100%;
+  }
+  .presentacion1 {
+    grid-area: texto1;
+  }
+  .imagenPrincipal {
+    grid-area: foto;
+  }
+  .presentacion2 {
+    grid-area: texto2;
+  }
+  .presentacionImagenes {
+    grid-area: imagenes;
+  }
+  .presentacion3 {
+    grid-area: texto3;
+  }
+  .container-carrusel {
+    grid-area: carrusel;
+  }
+  .presentacionImagenes {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .fotoPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .parrafo2 {
+    text-align: center;
+  }
+  #capturando1 {
+    display: none;
+  }
+  #capturando2 {
+    display: none;
+  }
+  .parrafo3 {
+    text-align: center;
+  }
+  .container-carrusel {
+    width: 100%;
+  }
+  .miClase img {
+    height: auto;
+  }
+  /*Páginas*/
+  .main-pag {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .mobile-header {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+  }
+  .mobile-body {
+    width: 100%;
+  }
+  /*Postales de Bs. As.*/
+  #cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+  /*Naturaleza y animales*/
+  #lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+  /*Retrato*/
+  #dama, #chaplin, #campesino, #dumbledore, #mcgonagall, #tyrion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+  /*Lugares para visitar*/
+  #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
