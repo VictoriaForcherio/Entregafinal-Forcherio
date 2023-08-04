@@ -72,14 +72,13 @@
 .imagenPrincipal{
     @include flex(flex, center, center);
     grid-area: foto;
-    height: 700px;
+
 }
 
 .fotoPrincipal{
     @include flex(flex, center, center);
     img {
         width: 85%;
-        height: auto;
         margin-top: 100px;
         border-radius: 8px;
         box-shadow:0 0 10px rgb(154, 154, 154);
@@ -140,12 +139,10 @@
 
 .presentacion1{
     grid-area: texto1;
-    height: 700px;
     grid-column: 1/3;
 }
 
 .presentacion2{
-    height: 250px;
     grid-area: texto2;
 }
 
@@ -167,14 +164,12 @@
 
 #capturando1, #capturando2, #capturando3{
     width: 70%;
-    height: auto;
     border-radius: 8px;
     cursor: pointer;
     box-shadow:0 0 10px rgb(154, 154, 154);
 }
 
 .presentacion3{
-    height: 300px;
     grid-area: texto3;
 }
 
@@ -183,11 +178,6 @@
     grid-area: carrusel;
 }
 
-.miClase{
-    width: 30%;
-    img{
-        height: 900px;
-    }
 
 /*FOOTER*/
 footer{
@@ -289,5 +279,4 @@ form {
     }
 }  
 
-    }
 
