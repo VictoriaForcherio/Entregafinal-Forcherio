@@ -15,6 +15,10 @@
     }
 }
 
+.navbar-brand{
+    display: none
+}
+
 /*postales de Buenos Aires*/
 #postales{ /*titulo*/
     @extend .estilo-titulos;
