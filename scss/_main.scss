@@ -53,7 +53,7 @@
         font-size: map-get($tamañoFuente, pequeña);
         @include parrafos(center, 10%, 10%);
     }
-}
+} 
 
 .grid-container{
     max-width: none;
