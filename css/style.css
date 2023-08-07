@@ -21,7 +21,7 @@ footer {
   align-items: center;
 }
 
-.estilo-titulos, #lugares, #retrato, #naturalezaAnimales, #postales {
+.estilo-titulos, #retrato, #lugares, #postales, #naturalezaAnimales {
   font-family: "roboto";
   color: #2ECC71;
   text-align: center;
@@ -72,7 +72,6 @@ body {
   #logo:hover {
     cursor: pointer;
   }
-  /*menu de navegacion*/
   .navbar {
     background-color: rgba(248, 247, 244, 0.967);
     height: 50%;
@@ -94,14 +93,6 @@ body {
     color: #2ECC71;
     transform: scale(1.1);
     text-decoration: none;
-  }
-  .dropdown-item {
-    text-align: center;
-  }
-  .dropdown-item:hover {
-    color: #2ECC71;
-    background-color: rgba(230, 221, 221, 0.393);
-    transform: scale(1.1);
   }
   #icono-email:hover {
     cursor: pointer;
@@ -158,7 +149,7 @@ body {
   .parrafo1 p {
     margin-bottom: 40px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 27px;
+    font-size: 21px;
     text-align: center;
     margin-left: 15%;
     margin-right: 5%;
@@ -168,7 +159,7 @@ body {
   }
   .parrafo2 p {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 27px;
+    font-size: 21px;
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -178,7 +169,7 @@ body {
   }
   .parrafo3 p {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 27px;
+    font-size: 21px;
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -253,7 +244,7 @@ body {
   /*titulo del footer*/
   #tituloContacto {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: #2ECC71;
     text-align: center;
   }
@@ -323,22 +314,31 @@ body {
   }
 }
 /*PÁGINAS*/
-.main-pag {
+/*estilos de todas las paginas*/
+.main-pag, .main-nat-anim {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: auto;
 }
-.main-pag img {
-  width: 120%;
-  height: 90%;
+.main-pag img, .main-nat-anim img {
+  width: 100%;
+  border-radius: 30px;
 }
-.main-pag img hover { /*diseño para todas las imagenes de las paginas*/
+.main-pag img:hover, .main-nat-anim img:hover { /*estilos para todas las imagenes de las paginas*/
   transition: 0.5s;
   transform: scale(1.1);
   cursor: pointer;
-  border-radius: 10px;
   box-shadow: 0 0 10px rgb(154, 154, 154);
+}
+
+#retrato, #lugares, #postales, #naturalezaAnimales { /*titulos*/
+  font-size: 30px;
+  padding: 30px;
+}
+
+.custom-height {
+  height: 525px;
 }
 
 .navbar-brand {
@@ -346,10 +346,6 @@ body {
 }
 
 /*postales de Buenos Aires*/
-#postales { /*titulo*/
-  font-size: 40px;
-}
-
 #cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso {
   padding: 25px;
 }
@@ -362,15 +358,10 @@ body {
   padding: 10px 5%;
 }
 
-#naturalezaAnimales { /*titulo*/
-  font-size: 40px;
-  top: 100px;
-}
-
-#naturaleza { /*primer subtitulo*/
-  font-size: 30px;
+#naturaleza, #animales { /*primer subtitulo*/
+  font-size: 25px;
   text-align: center;
-  margin: 5px;
+  padding: 15px;
 }
 
 #lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro {
@@ -378,10 +369,8 @@ body {
   height: auto;
 }
 
-#animales { /*segundo subtitulo*/
-  font-size: 30px;
-  text-align: center;
-  margin: 10px;
+.custom-height-img6 {
+  height: 800px;
 }
 
 #lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro {
@@ -389,10 +378,6 @@ body {
 }
 
 /*Retrato*/
-#retrato { /*titulo*/
-  font-size: 40px;
-}
-
 .container {
   position: relative;
   top: 7%;
@@ -404,7 +389,7 @@ body {
 
 /*Lugares para visitar*/
 #lugares { /*titulo*/
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion {
@@ -512,7 +497,7 @@ body {
 
 .parrafo1 p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 27px;
+  font-size: 21px;
   text-align: center;
   margin-left: 15%;
   margin-right: 5%;
@@ -523,7 +508,7 @@ body {
 }
 .parrafo2 p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 27px;
+  font-size: 21px;
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
@@ -534,7 +519,7 @@ body {
 }
 .parrafo3 p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 27px;
+  font-size: 21px;
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
@@ -611,7 +596,7 @@ footer {
 /*titulo del footer*/
 #tituloContacto {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   color: #2ECC71;
   text-align: center;
 }
@@ -803,7 +788,7 @@ form {
   /*titulo del footer*/
   #tituloContacto {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: #2ECC71;
     text-align: center;
   }

@@ -37,17 +37,15 @@ header{
         }
 }
 
-/*menu de navegacion*/
-
-    .navbar {
+.navbar {
     background-color:rgba(248, 247, 244, 0.967);
     height: 50%;
-    }
+}
 
-    .navbar-nav {
-        display: flex;
-        justify-content: start
-    }
+.navbar-nav {
+    display: flex;
+    justify-content: start
+}
 
 .navbar-nav .nav-item .nav-link{
     display: flex;
@@ -63,14 +61,6 @@ header{
         text-decoration: none;
     }
 }
-
-.dropdown-item{
-    text-align: center;
-        &:hover{color: $color-estilo;
-            background-color: rgba(230, 221, 221, 0.393);
-            transform: scale(1.1);   
-        }
-    }
 
 #icono-email:hover{
     cursor: pointer;

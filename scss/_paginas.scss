@@ -1,18 +1,28 @@
 /*PÁGINAS*/
-.main-pag{
+/*estilos de todas las paginas*/
+.main-pag, .main-nat-anim{
     @include flex(flex, space-between, center);
     height: auto;
     img{
-        width: 120%;
-        height: 90%;
-        & hover{ /*diseño para todas las imagenes de las paginas*/
-            transition: .5s;
+        width: 100%;
+        border-radius: 30px;
+        &:hover{ /*estilos para todas las imagenes de las paginas*/
+            transition: 0.5s;
             transform: scale(1.1);
             cursor: pointer;
-            border-radius: 10px;
             box-shadow:0 0 10px rgb(154, 154, 154);
         }
     }
+}
+
+#retrato, #lugares, #postales, #naturalezaAnimales{ /*titulos*/
+    @extend .estilo-titulos;
+    font-size: map-get($tamañoFuente, grande);
+    padding: 30px;
+}  
+
+.custom-height{
+    height: 525px;
 }
 
 .navbar-brand{
@@ -20,13 +30,9 @@
 }
 
 /*postales de Buenos Aires*/
-#postales{ /*titulo*/
-    @extend .estilo-titulos;
-    font-size: map-get($tamañoFuente, grande);
-}
 
 #cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso{
-    padding: 25px
+    padding: 25px;
 }
 
 /* naturaleza y animales*/
@@ -35,27 +41,19 @@
     padding: 10px 5%;
 }
 
-#naturalezaAnimales{ /*titulo*/
-    @extend .estilo-titulos;
-    font-size: map-get($tamañoFuente, grande);
-    top: 100px;
-}
-
-#naturaleza{ /*primer subtitulo*/
+#naturaleza, #animales{ /*primer subtitulo*/
     font-size: map-get($tamañoFuente, media);
     text-align: center;
-    margin: 5px;
+    padding: 15px;
 }
 
-#lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro {
+#lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro{
     max-width: 100%;
     height: auto;
 }
 
-#animales{ /*segundo subtitulo*/
-    font-size: map-get($tamañoFuente, media);
-    text-align: center;
-    margin: 10px;
+.custom-height-img6{
+    height: 800px;
 }
 
 #lago, #parque, #la-lucila-del-mar, #pato, #caballos, #perro{ 
@@ -64,11 +62,6 @@
 
 
 /*Retrato*/
-#retrato{ /*titulo*/
-    @extend .estilo-titulos;
-    font-size: map-get($tamañoFuente, grande);
-}
-
 .container{
     position: relative;
     top: 7%;
