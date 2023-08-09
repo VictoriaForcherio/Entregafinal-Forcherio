@@ -38,6 +38,18 @@ body {
   grid-template-areas: "header" "main" "footer";
 }
 
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
 /* HEADER */
 @media (min-width: 1024px) {
   header {
@@ -388,10 +400,6 @@ body {
 }
 
 /*Lugares para visitar*/
-#lugares { /*titulo*/
-  font-size: 30px;
-}
-
 #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion {
   padding: 25px;
 }

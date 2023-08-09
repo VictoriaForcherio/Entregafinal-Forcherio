@@ -30,7 +30,6 @@
 }
 
 /*postales de Buenos Aires*/
-
 #cabildo, #av-9-de-julio, #obelisco, #palacio-de-la-legislatura, #puerto-madero, #congreso{
     padding: 25px;
 }
@@ -72,11 +71,6 @@
 }
 
 /*Lugares para visitar*/
-#lugares{ /*titulo*/
-    @extend .estilo-titulos;
-    font-size: map-get($tamañoFuente, grande);
-}
-
 #campanopolis, #teatro, #puente-transbordador, #museo, #iglesia-museo, #fundacion{
     padding: 25px;
 }
