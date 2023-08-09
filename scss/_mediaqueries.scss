@@ -1,5 +1,10 @@
+/*TABLET*/
+@media (min-width:577px) and (max-width:1023px){
+
+}
+
 /*MOVIL*/
-@media (min-width: 320px) and (max-width: 576px){
+@media (min-width: 320px) and (max-width: 768px){
 
     /*HEADER*/
         
@@ -137,17 +142,22 @@
         display: none;
     }
 
+    #capturando3{
+        height: 100%;
+        width: 40%;
+    }
+
     .parrafo3{
         text-align: center;
     }
-
-    .container-carrusel{
-        width: 100%; 
-    }
     
-    .miClase img {
-    height: auto; 
-    }
+    .miClase{
+        width: 30%;
+        img {
+            height: auto; 
+            }
+        } 
+
 
     /*FOOTER*/
 
