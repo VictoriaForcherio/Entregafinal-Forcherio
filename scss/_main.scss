@@ -5,18 +5,15 @@
     grid-area: foto;
 }
 
-.fotoPrincipal{
-    @include flex(flex, center, center);
-    img {
-        width: 85%;
-        margin-top: 100px;
-        border-radius: 8px;
-        box-shadow:0 0 10px rgb(154, 154, 154);
-        transition: width 2s, height 2s;
-        &:hover{
-            cursor: pointer;
-            width:90%
-        }
+#imagen1{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    width: 75%;
+    transition: width 2s, height 2s;
+    &:hover{
+        cursor: pointer;
+        width:80%
     }
 }
 

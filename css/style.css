@@ -131,21 +131,16 @@ footer {
     align-items: center;
     grid-area: foto;
   }
-  .fotoPrincipal {
+  #imagen1 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .fotoPrincipal img {
-    width: 85%;
-    margin-top: 100px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgb(154, 154, 154);
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 75%;
     transition: width 2s, height 2s;
   }
-  .fotoPrincipal img:hover {
+  #imagen1:hover {
     cursor: pointer;
-    width: 90%;
+    width: 80%;
   }
   .titulo {
     font-family: cursive;
@@ -313,7 +308,6 @@ footer {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    background-color: #2ECC71;
     border: 1px solid green;
     background-image: linear-gradient(#2ECC71, rgb(46, 134, 81));
     box-shadow: 0 0 10px rgb(105, 137, 126);
@@ -405,7 +399,7 @@ footer {
 }
 
 /*TABLET*/
-@media (min-width: 576px) and (max-width: 1023px) {
+@media (min-width: 577px) and (max-width: 1023px) {
   /*HEADER*/
   header {
     grid-area: header;
@@ -683,11 +677,13 @@ form {
 }
 
 /*MOVIL*/
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   /*HEADER*/
   /*menú hamburguesa*/
   .navbar-header {
     display: flex;
+    width: 100%;
+    margin-right: 50px;
   }
   .navbar-toggler {
     display: flex;
@@ -697,13 +693,14 @@ form {
     border-radius: 5px;
     padding: 5px 10px;
     margin-top: 20px;
-    margin-left: 500px;
+    margin-left: 550px;
     width: 50px;
     height: 50px;
   }
   #logo {
     height: 100px;
     width: 100px;
+    margin-left: 70px;
   }
   .logo1 {
     flex: 1;
