@@ -24,7 +24,6 @@ header{
 #imagen/*menu de navegacion*/
     .navbar {
     background-color:rgba(248, 247, 244, 0.967);
-    height: 50%;
     }
 
     .navbar-nav {
@@ -272,7 +271,7 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
     .navbar-header{
         display: flex;
         width: 100%;
-        margin-right: 50px;
+        align-items: center;
         
     }
     

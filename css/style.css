@@ -63,7 +63,6 @@ header {
 .navbar {
   display: flex;
   justify-content: center;
-  height: 100px;
   background-color: rgba(248, 247, 244, 0.967);
 }
 
@@ -81,15 +80,10 @@ header {
 
 #logo {
   margin: 0;
-  width: 150px;
+  width: 20%;
 }
 #logo:hover {
   cursor: pointer;
-}
-
-.navbar {
-  background-color: rgba(248, 247, 244, 0.967);
-  height: 50%;
 }
 
 .navbar-nav {
@@ -442,7 +436,6 @@ form {
   }
   #imagen .navbar {
     background-color: rgba(248, 247, 244, 0.967);
-    height: 50%;
   }
   .navbar-nav {
     display: flex;
@@ -688,7 +681,7 @@ form {
   .navbar-header {
     display: flex;
     width: 100%;
-    margin-right: 50px;
+    align-items: center;
   }
   .navbar-toggler {
     display: flex;
