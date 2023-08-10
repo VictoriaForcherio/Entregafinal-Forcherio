@@ -265,8 +265,13 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
 @media (min-width: 320px) and (max-width: 768px){
 
     /*HEADER*/
-        
+
     /*menú hamburguesa*/
+    .navbar{
+        justify-content: space-between;
+        width: 100%;
+    } 
+
     .navbar-header{
         display: flex;
         width: 100%;
@@ -289,7 +294,6 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
     #logo{
         height: 100px ;
         width: 100px;
-        margin-left: 70px;
     }
 
     .logo1 {
