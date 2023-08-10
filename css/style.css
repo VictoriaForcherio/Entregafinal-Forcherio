@@ -57,7 +57,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 85px;
   padding: 5px 5%;
 }
 
@@ -441,8 +440,7 @@ form {
   #logo:hover {
     cursor: pointer;
   }
-  /*menu de navegacion*/
-  .navbar {
+  #imagen .navbar {
     background-color: rgba(248, 247, 244, 0.967);
     height: 50%;
   }
@@ -569,24 +567,7 @@ form {
   grid-area: texto2;
 }
 
-.presentacionImagenes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 500px;
-  justify-items: center;
-  align-items: center;
-  grid-area: imagenes;
-}
-.presentacionImagenes img {
-  border-radius: 8px;
-}
-.presentacionImagenes img:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-#capturando1, #capturando2, #capturando3 {
-  width: 70%;
+#capturando3 {
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 0 10px rgb(154, 154, 154);
@@ -752,7 +733,7 @@ form {
   }
   .grid-container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 400px 700px 200px 600px 350px 650px;
     grid-template-areas: "texto1" "foto" "texto2" "imagenes" "texto3" "carrusel";
   }
   .presentacion1,
@@ -774,6 +755,10 @@ form {
   }
   .presentacionImagenes {
     grid-area: imagenes;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
   }
   .presentacion3 {
     grid-area: texto3;
@@ -781,25 +766,19 @@ form {
   .container-carrusel {
     grid-area: carrusel;
   }
-  .presentacionImagenes {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-  }
-  .fotoPrincipal {
+  #imagen1 {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  #imagen1 {
     width: 60%;
+    margin-top: 5px;
   }
   .parrafo1 {
     text-align: center;
   }
   .parrafo2 {
     text-align: center;
+    margin-top: 30px;
   }
   #capturando1 {
     display: none;

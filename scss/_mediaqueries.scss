@@ -21,7 +21,7 @@ header{
         }
 }
 
-/*menu de navegacion*/
+#imagen/*menu de navegacion*/
     .navbar {
     background-color:rgba(248, 247, 244, 0.967);
     height: 50%;
@@ -147,24 +147,7 @@ grid-column: 1/3;
 grid-area: texto2;
 }
 
-.presentacionImagenes{
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 500px;
-justify-items: center;
-align-items: center;
-grid-area: imagenes;
-img{
-    border-radius: 8px;
-    &:hover{
-        cursor: pointer;
-        transform: scale(1.1);
-    }
-}
-}
-
-#capturando1, #capturando2, #capturando3{
-width: 70%;
+#capturando3{
 border-radius: 8px;
 cursor: pointer;
 box-shadow:0 0 10px rgb(154, 154, 154);
@@ -348,7 +331,7 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
 
     .grid-container{
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 400px 700px 200px 600px 350px 650px;
         grid-template-areas:
         "texto1"
         "foto"
@@ -382,6 +365,10 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
 
     .presentacionImagenes{
         grid-area: imagenes;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
     }
 
     .presentacion3{
@@ -392,19 +379,10 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
         grid-area: carrusel;
     }
 
-    .presentacionImagenes{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .fotoPrincipal {
-        @include flex(flex, center, center);
-    }
-
     #imagen1{
+        @include flex(flex, center, center);
         width: 60%;
+        margin-top: 5px;
     }
 
     .parrafo1 {
@@ -413,6 +391,7 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
     
     .parrafo2{
         text-align: center;
+        margin-top: 30px;
     }
 
     #capturando1{
