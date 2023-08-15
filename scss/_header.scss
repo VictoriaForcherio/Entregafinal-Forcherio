@@ -34,14 +34,15 @@ header{
         }
 }
 
-.navbar-nav {
-    display: flex;
-    justify-content: start
+
+.navbar-nav .nav-item {
+    margin-right: 30px;
 }
 
 .navbar-nav .nav-item .nav-link{
     display: flex;
     flex-direction: row;
+    align-items: center;
     color: black;
     font-size: 22px;
     padding:0 15px;

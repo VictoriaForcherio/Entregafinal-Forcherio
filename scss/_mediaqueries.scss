@@ -329,9 +329,22 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
         ;
     }
 
+    header{
+        grid-area: header;
+    }
+    
+    main{
+        grid-area: main;
+    }
+    
+    footer{
+        grid-area: footer;
+    }
+
+
     .grid-container{
         grid-template-columns: 1fr;
-        grid-template-rows: 400px 700px 200px 600px 350px 650px;
+        grid-template-rows: 580px 410px 300px 400px 550px 500px;
         grid-template-areas:
         "texto1"
         "foto"
@@ -340,7 +353,6 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
         "texto3"
         "carrusel";
     }
-
 
     .presentacion1,
     .imagenPrincipal,
@@ -379,40 +391,43 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
         grid-area: carrusel;
     }
 
+    .titulo{
+        margin-top: 20px;
+    }
+
+    parrafo1 {
+        margin-top: 20px;
+        p {
+        margin-left: 40px;
+        }
+        }
+
+    .parrafo2 {
+        margin-top: 20px;
+    }
+
     #imagen1{
         @include flex(flex, center, center);
         width: 60%;
         margin-top: 5px;
     }
 
-    .parrafo1 {
+    .parrafo1 p, .parrafo2 p, .parrafo3 p{
         text-align: center;
     }
     
-    .parrafo2{
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    #capturando1{
-        display: none;
-    }
-
-    #capturando2{
+    #capturando1, #capturando2{
         display: none;
     }
 
     #capturando3{
         height: 100%;
-        width: 40%;
-    }
-
-    .parrafo3{
-        text-align: center;
+        width: 60%;
     }
     
     .miClase{
-        width: 30%;
+        height: 100%;
+        width: 60%;
         img {
             height: auto; 
             }
