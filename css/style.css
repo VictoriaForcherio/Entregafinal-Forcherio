@@ -10,7 +10,7 @@
 }
 /*Variables*/ /*condicionales*/
 footer {
-  background-color: rgba(248, 247, 244, 0.967);
+  background-color: none;
 }
 
 /*maps*/ /*Extend*/
@@ -194,7 +194,7 @@ header nav {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 500px 250px 450px 400px 700px;
+    grid-template-rows: 200px 250px 450px 400px 700px;
     grid-template-areas: "texto1 texto1 foto" "texto2 texto2 texto2" "imagenes imagenes imagenes" "texto3 texto3 texto3" "carrusel carrusel carrusel";
   }
   .presentacion1 {
@@ -243,7 +243,7 @@ header nav {
 /*FOOTER*/
 footer {
   height: 630px;
-  background-color: gris;
+  background-color: grey;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -267,7 +267,7 @@ footer {
 /*informacion de contacto*/
 #whatsapp {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 26px;
+  font-size: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -584,7 +584,7 @@ textarea {
 /*FOOTER*/
 footer {
   height: 630px;
-  background-color: gris;
+  background-color: grey;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

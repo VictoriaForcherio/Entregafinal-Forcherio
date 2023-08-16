@@ -61,7 +61,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 500px 250px 450px 400px 700px;
+    grid-template-rows: 200px 250px 450px 400px 700px;
     grid-template-areas:
     "texto1 texto1 foto"
     "texto2 texto2 texto2"
