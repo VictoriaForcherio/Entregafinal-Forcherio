@@ -21,13 +21,14 @@ footer{
     font-size: map-get($tamañoFuente, grande);
     color: $color-estilo;
     text-align: center;
+    margin-top: 15px;
 
 }
 
 /*informacion de contacto*/
 #whatsapp{
     font-family: $fuente-principal;
-    font-size: 10px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +37,7 @@ footer{
 
 #email{
     font-family: $fuente-principal;
-    font-size: 26px;
+    font-size: 23px;
     display: flex;
     justify-content: end;
     margin-top: 16px;
@@ -66,7 +67,6 @@ form {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
 }
 
 .col-12{
@@ -81,7 +81,7 @@ form {
 }
 
 textarea{
-    width: 100%;
+    width: 70%;
 }
 
 .btn-primary{ /*boton enviar*/

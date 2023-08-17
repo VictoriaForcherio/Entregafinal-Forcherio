@@ -10,14 +10,14 @@ header{
         }
 }
 
-.navbar {
+.navbar{
     display: flex;
     justify-content: center; 
     background-color: rgba(248, 247, 244, 0.967);
     width: 100%;
 }
 
-.full-width-navbar {
+.full-width-navbar{
     padding-left: 0;
     padding-right: 0;
     width: 100%;
@@ -35,11 +35,11 @@ header{
         }
 }
 
-.navbar-nav .nav-item {
+.navbar-nav .nav-item{
     margin-right: 30px;
 }
 
-.container-fluid.d-flex.justify-content-between.align-items-center {
+.container-fluid.d-flex.justify-content-between.align-items-center{
     max-width: 17%; 
     margin: 0 auto; 
 }
