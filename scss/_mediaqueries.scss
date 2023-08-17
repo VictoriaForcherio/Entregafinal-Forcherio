@@ -30,7 +30,7 @@ header{
         display: flex;
         justify-content: start
     }
-}
+
 
 .navbar-nav .nav-item .nav-link{
     display: flex;
@@ -258,8 +258,9 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
     box-shadow: 0 0 10px rgba(105, 137, 126, 0.822);
     transform: scale(1.1);
     cursor: pointer;
+        }
+    }  
 }
-}  
 
 /*MOVIL*/
 @media (min-width: 320px) and (max-width: 768px){

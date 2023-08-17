@@ -66,6 +66,7 @@ header nav {
   display: flex;
   justify-content: center;
   background-color: rgba(248, 247, 244, 0.967);
+  width: 100%;
 }
 
 .full-width-navbar {
@@ -74,13 +75,13 @@ header nav {
   width: 100%;
 }
 
-.logo1 {
+.navbar-header {
   display: flex;
 }
 
 #logo {
-  margin: 0;
-  width: 20%;
+  margin-left: 35%;
+  width: 40%;
 }
 #logo:hover {
   cursor: pointer;
@@ -90,13 +91,18 @@ header nav {
   margin-right: 30px;
 }
 
+.container-fluid.d-flex.justify-content-between.align-items-center {
+  max-width: 17%;
+  margin: 0 auto;
+}
+
 .navbar-nav .nav-item .nav-link {
   display: flex;
   flex-direction: row;
   align-items: center;
   color: black;
-  font-size: 22px;
-  padding: 0 15px;
+  font-size: 18px;
+  padding: 0 10spx;
   margin: 0 10px;
   background-color: rgba(248, 247, 244, 0.967);
 }
@@ -120,7 +126,7 @@ header nav {
 
 .iconos-de-contacto {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .contacto-item {
@@ -139,15 +145,15 @@ header nav {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 1%;
-    width: 70%;
+    width: 68%;
+    margin-top: 15%;
     transition: width 2s, height 2s;
     border-radius: 8px;
     box-shadow: 0 0 10px rgb(154, 154, 154);
   }
   #imagen1:hover {
     cursor: pointer;
-    width: 75%;
+    width: 74%;
   }
   .titulo {
     font-family: cursive;
@@ -194,7 +200,7 @@ header nav {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px 250px 450px 400px 700px;
+    grid-template-rows: 500px 250px 450px 300px 550px;
     grid-template-areas: "texto1 texto1 foto" "texto2 texto2 texto2" "imagenes imagenes imagenes" "texto3 texto3 texto3" "carrusel carrusel carrusel";
   }
   .presentacion1 {
@@ -234,10 +240,14 @@ header nav {
     justify-content: center;
     align-items: center;
     grid-area: carrusel;
+    height: 550px;
+  }
+  .carousel-inner {
+    height: 100%;
   }
   .miClase {
     width: 30%;
-    height: auto;
+    height: 100%;
   }
 }
 /*FOOTER*/
@@ -445,239 +455,209 @@ textarea {
     display: flex;
     justify-content: start;
   }
+  .navbar-nav .nav-item .nav-link {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-size: 22px;
+    padding: 0 15px;
+    margin: 0 10px;
+    background-color: rgba(248, 247, 244, 0.967);
+  }
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #2ECC71;
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+  #icono-email:hover {
+    cursor: pointer;
+  }
+  #icono-instagram:hover {
+    cursor: pointer;
+  }
+  .iconos-de-contacto {
+    display: flex;
+    align-items: center;
+  }
+  .contacto-item {
+    margin-right: 10px;
+  }
+  /*MAIN*/
+  .grid-container {
+    grid-template-rows: 500px 200px 400px 300px 700px;
+  }
+  .imagenPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: foto;
+  }
+  .fotoPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fotoPrincipal img {
+    width: 85%;
+    margin-top: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(154, 154, 154);
+    transition: width 2s, height 2s;
+  }
+  .fotoPrincipal img:hover {
+    cursor: pointer;
+    width: 90%;
+  }
+  .titulo {
+    font-family: cursive;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .parrafo1 p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 21px;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+  .parrafo2 {
+    margin-top: 80px;
+  }
+  .parrafo2 p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 21px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .parrafo3 {
+    margin-top: 50px;
+  }
+  .parrafo3 p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 21px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .grid-container {
+    max-width: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 700px 250px 500px 400px 900px;
+    grid-template-areas: "texto1 texto1 foto" "texto2 texto2 texto2" "imagenes imagenes imagenes" "texto3 texto3 texto3" "carrusel carrusel carrusel";
+  }
+  .presentacion1 {
+    grid-area: texto1;
+    grid-column: 1/3;
+  }
+  .presentacion2 {
+    grid-area: texto2;
+  }
+  #capturando3 {
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(154, 154, 154);
+  }
+  .presentacion3 {
+    grid-area: texto3;
+  }
+  .container-carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: carrusel;
+  }
+  /*FOOTER*/
+  footer {
+    height: 630px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    grid-area: footer;
+  }
+  .footer {
+    height: 630px;
+  }
+  /*titulo del footer*/
+  #tituloContacto {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 30px;
+    color: #2ECC71;
+    text-align: center;
+  }
+  /*informacion de contacto*/
+  #whatsapp {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  #email {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 26px;
+    display: flex;
+    justify-content: end;
+    margin-top: 16px;
+  }
+  /*formulario*/
+  form {
+    font-size: 20px;
+  }
+  .contacto {
+    text-align: center;
+  }
+  .fila {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fila img {
+    margin-right: 10px;
+  }
+  .container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-6 {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-primary { /*boton enviar*/
+    width: 90px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #2ECC71;
+    border: 1px solid green;
+    background-image: linear-gradient(#2ECC71, rgb(46, 134, 81));
+    box-shadow: 0 0 10px rgb(105, 137, 126);
+  }
+  .btn-primary:hover {
+    background-image: linear-gradient(to left, #24a259, rgb(38, 109, 66));
+    box-shadow: 0 0 10px rgba(105, 137, 126, 0.822);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 }
-.navbar-nav .nav-item .nav-link {
-  display: flex;
-  flex-direction: row;
-  color: black;
-  font-size: 22px;
-  padding: 0 15px;
-  margin: 0 10px;
-  background-color: rgba(248, 247, 244, 0.967);
-}
-.navbar-nav .nav-item .nav-link:hover {
-  color: #2ECC71;
-  transform: scale(1.1);
-  text-decoration: none;
-}
-
-#icono-email:hover {
-  cursor: pointer;
-}
-
-#icono-instagram:hover {
-  cursor: pointer;
-}
-
-.iconos-de-contacto {
-  display: flex;
-  align-items: center;
-}
-
-.contacto-item {
-  margin-right: 10px;
-}
-
-/*MAIN*/
-.grid-container {
-  grid-template-rows: 500px 200px 400px 300px 700px;
-}
-
-.imagenPrincipal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: foto;
-}
-
-.fotoPrincipal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.fotoPrincipal img {
-  width: 85%;
-  margin-top: 100px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgb(154, 154, 154);
-  transition: width 2s, height 2s;
-}
-.fotoPrincipal img:hover {
-  cursor: pointer;
-  width: 90%;
-}
-
-.titulo {
-  font-family: cursive;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
-.parrafo1 p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 21px;
-  text-align: center;
-  margin-left: 15%;
-  margin-right: 5%;
-}
-
-.parrafo2 {
-  margin-top: 80px;
-}
-.parrafo2 p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 21px;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.parrafo3 {
-  margin-top: 50px;
-}
-.parrafo3 p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 21px;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.grid-container {
-  max-width: none;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 700px 250px 500px 400px 900px;
-  grid-template-areas: "texto1 texto1 foto" "texto2 texto2 texto2" "imagenes imagenes imagenes" "texto3 texto3 texto3" "carrusel carrusel carrusel";
-}
-
-.presentacion1 {
-  grid-area: texto1;
-  grid-column: 1/3;
-}
-
-.presentacion2 {
-  grid-area: texto2;
-}
-
-#capturando3 {
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgb(154, 154, 154);
-}
-
-.presentacion3 {
-  grid-area: texto3;
-}
-
-.container-carrusel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: carrusel;
-}
-
-/*FOOTER*/
-footer {
-  height: 630px;
-  background-color: grey;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  grid-area: footer;
-}
-
-.footer {
-  height: 630px;
-}
-
-/*titulo del footer*/
-#tituloContacto {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 30px;
-  color: #2ECC71;
-  text-align: center;
-}
-
-/*informacion de contacto*/
-#whatsapp {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 26px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
-#email {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 26px;
-  display: flex;
-  justify-content: end;
-  margin-top: 16px;
-}
-
-/*formulario*/
-form {
-  font-size: 20px;
-}
-
-.contacto {
-  text-align: center;
-}
-
-.fila {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.fila img {
-  margin-right: 10px;
-}
-
-.container form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5px;
-}
-
-.col-12 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.col-6 {
-  display: flex;
-  justify-content: center;
-}
-
-.btn-primary { /*boton enviar*/
-  width: 90px;
-  height: 45px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: #2ECC71;
-  border: 1px solid green;
-  background-image: linear-gradient(#2ECC71, rgb(46, 134, 81));
-  box-shadow: 0 0 10px rgb(105, 137, 126);
-}
-.btn-primary:hover {
-  background-image: linear-gradient(to left, #24a259, rgb(38, 109, 66));
-  box-shadow: 0 0 10px rgba(105, 137, 126, 0.822);
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
 /*MOVIL*/
 @media (min-width: 320px) and (max-width: 768px) {
   /*HEADER*/
