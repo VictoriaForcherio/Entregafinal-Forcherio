@@ -43,16 +43,6 @@ footer{
     margin-top: 16px;
 }
 
-/*formulario*/
-form {
-    font-size: 20px;
-}
-
-.contacto {
-    text-align: center;
-    
-}
-
 .fila{
     height: 60px;
     display: flex;
@@ -63,10 +53,35 @@ form {
     }
 }
 
+
+/*formulario*/
+form {
+    font-size: 20px;
+}
+
 .container form{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 2px solid $color-estilo; 
+    border-radius: 10px; 
+    padding: 5px;
+    width: 40%; 
+    margin-bottom: 10px; 
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #8b8c8b; 
+    outline: none; 
+}
+
+input[type="text"], input[type="email"], textarea {
+    font-family: $fuente-principal; 
+    font-size: 20px;
+    padding: 5px 15px;
 }
 
 .col-12{

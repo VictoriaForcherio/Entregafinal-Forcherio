@@ -293,7 +293,7 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
     }
 
     #logo{
-        height: 100px ;
+        height: 100px;
         width: 100px;
     }
 
@@ -342,10 +342,9 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
         grid-area: footer;
     }
 
-
     .grid-container{
         grid-template-columns: 1fr;
-        grid-template-rows: 580px 410px 300px 400px 550px 500px;
+        grid-template-rows: 580px 400px 300px 400px 550px 400px;
         grid-template-areas:
         "texto1"
         "foto"
@@ -394,28 +393,40 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
 
     .titulo{
         margin-top: 20px;
+        color: $color-estilo;
+        font-family:cursive;
+        font-size: 25px;
+        @include flex(flex, center, center);
+        margin-left: 12%;
+        margin-top: 5%;
     }
 
-    parrafo1 {
+    #imagen1 {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 60%; 
+        margin: 5px auto;
+    }
+
+    .parrafo1, .parrafo2{
         margin-top: 20px;
         p {
-        margin-left: 40px;
+            margin-bottom: 25px; 
+            font-family: $fuente-principal;
+            font-size: 18px;
+            @include parrafos(center, 10%, 10%);
         }
         }
-
-    .parrafo2 {
+    
+    .parrafo3{
         margin-top: 20px;
-    }
-
-    #imagen1{
-        @include flex(flex, center, center);
-        width: 60%;
-        margin-top: 5px;
-    }
-
-    .parrafo1 p, .parrafo2 p, .parrafo3 p{
-        text-align: center;
-    }
+        p { 
+            font-family: $fuente-principal;
+            font-size: 18px;
+            @include parrafos(center, 10%, 10%);
+            }
+        }
     
     #capturando1, #capturando2{
         display: none;
@@ -426,14 +437,20 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
         width: 60%;
     }
     
+    .container-carrusel{
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
     .miClase{
-        height: 100%;
         width: 60%;
+        height: 100%;
         img {
             height: auto; 
             }
         } 
-
 
     /*FOOTER*/
 
@@ -443,34 +460,33 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
     font-size: map-get($tamañoFuente, grande);
     color: $color-estilo;
     text-align: center;
+    margin-left: 7%;
 }
 
 /*informacion de contacto*/
 #whatsapp{
     font-family: $fuente-principal;
-    font-size: 26px;
+    font-size: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+}
+
+#iconoWhatsapp{
+    height: 50%;
+    width: 50%;
 }
 
 #email{
     font-family: $fuente-principal;
-    font-size: 26px;
+    font-size: 21px;
     display: flex;
     justify-content: end;
-    margin-top: 16px;
 }
 
-/*formulario*/
-form {
-    font-size: 20px;
-}
-
-.contacto {
-    text-align: center;
-    
+#iconoCorreo2{
+    height: 50%;
+    width: 50%;
 }
 
 .fila{
@@ -483,11 +499,35 @@ form {
     }
 }
 
+/*formulario*/
+form {
+    font-size: 15px;
+}
+
 .container form{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    margin-top: -25px; 
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 2px solid $color-estilo; 
+    border-radius: 10px; 
+    padding: 5px;
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #8b8c8b; 
+    outline: none; 
+}
+
+input[type="text"], input[type="email"], textarea {
+    font-family: $fuente-principal; 
+    font-size: 20px;
+    padding: 5px 15px;
 }
 
 .col-12{
@@ -518,7 +558,6 @@ form {
         cursor: pointer;
     }
 } 
-
 
     /*PÁGINAS*/
     .main-pag{
