@@ -51,6 +51,7 @@
 .parrafo3{
     margin-top: 4%;
     p{
+        margin-bottom: 40px; 
         font-family: $fuente-principal;
         font-size: map-get($tamañoFuente, pequeña);
         @include parrafos(center, 10%, 10%);
@@ -62,7 +63,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 500px 250px 350px 300px 550px;
+    grid-template-rows: 500px 230px 350px 270px 550px;
     grid-template-areas:
     "texto1 texto1 foto"
     "texto2 texto2 texto2"
@@ -109,6 +110,7 @@
 #capturando3{
     margin-right: 25%;
 }
+
 .presentacion3{
     grid-area: texto3;
 }
