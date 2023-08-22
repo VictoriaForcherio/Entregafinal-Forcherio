@@ -268,18 +268,19 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
     /*HEADER*/
 
     /*menú hamburguesa*/
+    
     .navbar{
         justify-content: space-between;
-        width: 100%;
+        width: 20%;
     } 
-
+    
     .navbar-header{
         display: flex;
         width: 100%;
         align-items: center;
         
     }
-    
+
     .navbar-toggler {
         display: flex;
         justify-content: flex-end;
@@ -369,6 +370,10 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
 
     .imagenPrincipal{
         grid-area: foto;
+        img{
+            border-radius: 8px;
+            box-shadow:0 0 10px rgb(154, 154, 154);
+        }
     }
 
     .presentacion2{
@@ -381,6 +386,10 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
+        img{
+            border-radius: 8px;
+            box-shadow:0 0 10px rgb(154, 154, 154);
+        }
     }
 
     .presentacion3{
@@ -397,7 +406,7 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
         font-family:cursive;
         font-size: 25px;
         @include flex(flex, center, center);
-        margin-left: 12%;
+        margin-left: 8%;
         margin-top: 5%;
     }
 
@@ -442,6 +451,12 @@ box-shadow: 0 0 10px rgb(105, 137, 126);
         display: flex;
         justify-content: center;
         align-items: center; 
+    }
+
+    .carousel-inner{
+        height: 100%;
+        border-radius: 8px;
+        box-shadow:0 0 10px rgb(154, 154, 154);
     }
 
     .miClase{
