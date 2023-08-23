@@ -92,44 +92,46 @@
         <div class="footer">
     
             <div>
-                <h2 id="tituloContacto">Contacto</h2>
+                <h2 class="animate__animated animate__fadeInDown" id="tituloContacto">Contacto</h2>
             </div>
     
     <!-- iconos e informacion de contacto-->  
-            <div class="contacto">
-                <div class="fila">
-                    <img id="iconoWhatsapp" src="../img/whatsapp.png" alt="icono de whatsapp" width="35" height="35">
-                    <p id="whatsapp">+54 9 11 6374-2404</p>
-                </div>
-    
-                <div class="fila">
-                    <img id="iconoCorreo2" src="../img/email.png" alt="icono de correo electronico" width="35" height="35">
-                    <p id="email">cuandoenfoco@gmail.com</p>
-                </div>
+        <div class="contacto animate__animated animate__fadeInDown">
+            <div class="fila">
+                <a href="https://wa.me/5491163742404" target="_blank">
+                <img id="iconoWhatsapp" src="../img/whatsapp.png" alt="icono de whatsapp" width="35" height="35"></a>
+                <p id="whatsapp">+54 9 11 6374-2404</p>
             </div>
+    
+            <div class="fila">
+                <a href="mailto:cuandoenfoco@gmail.com" target="_blank">
+                <img id="iconoCorreo2" src="../img/email.png" alt="icono de correo electronico" width="35" height="35"></a>
+                <p id="email">cuandoenfoco@gmail.com</p>
+            </div>
+        </div>
     
     
         <!-- formulario -->
-            <div class="container">
-                <form class="row g-3">
-                    <div class="col-6">
-                        <label for="nombre"></label>
-                        <input type="text" name="Nombre" placeholder="Nombre">
-                    </div>
-                    <div class="col-6">
-                        <label for="correo"></label>
-                        <input type="email" name="Correo" placeholder="e-mail">
-                    </div>
-                    <div class="col-12">
-                        <label for="mensaje"></label>
-                        <textarea name="mensaje" id="" cols="114" rows="8" placeholder="Escribe tu mensaje"></textarea>
-                    </div> 
-                    <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Enviar</button>  
-                    </div>
-                </form>
-            </div>
+        <div class="container animate__animated animate__fadeIn">
+            <form class="row g-3">
+                <div class="col-6">
+                    <label for="nombre"></label>
+                    <input type="text" name="Nombre" placeholder="Nombre">
+                </div>
+                <div class="col-6">
+                    <label for="correo"></label>
+                    <input type="email" name="Correo" placeholder="e-mail">
+                </div>
+                <div class="col-12">
+                    <label for="mensaje"></label>
+                    <textarea name="mensaje" id="" cols="114" rows="8" placeholder="Escribe tu mensaje"></textarea>
+                </div> 
+                <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>  
+                </div>
+            </form>
         </div>
-    </footer>
+        </div>
+        </footer>
 </body>
 </html>
